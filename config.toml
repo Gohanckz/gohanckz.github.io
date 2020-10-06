@@ -6,13 +6,13 @@ theme = "hello-friend-ng"
 paginate     = 10
 
 [params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04"
+  dateform        = "Oct 03, 2020"
+  dateformShort   = "Jun 03"
+  dateformNum     = "2020-01-02"
+  dateformNumTime = "2020-01-02 15:04"
 
   # Subtitle for home
-  homeSubtitle = "Welcome to learn"
+  homeSubtitle = "Road to Red Team"
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false
@@ -59,8 +59,3 @@ paginate     = 10
     identifier = "tools"
     name       = "Tools"
     url        = "/tools"
-
-  [[main.menu]]
-    identifier = "about-me"
-    name       = "About-me"
-    url        = "/about-me"
