@@ -52,7 +52,7 @@ paginate     = 10
   # And you can even create generic menu
   [[menu.main]]
     identifier = "blog"
-    name       = "Blog"
+    name       = "Blosssg"
     url        = "/posts"
     
   [[menu.main]]
