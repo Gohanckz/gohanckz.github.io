@@ -7,7 +7,7 @@ paginate     = 10
 
 [params]
   dateform        = "Oct 03, 2020"
-  dateformShort   = "Jun 03"
+  dateformShort   = "Oct 03"
   dateformNum     = "2020-01-02"
   dateformNumTime = "2020-01-02 15:04"
 
@@ -50,6 +50,7 @@ paginate     = 10
     # alt = "Your example logo alt text"
 
   # And you can even create generic menu
+[menu]
   [[menu.main]]
     identifier = "posts"
     name       = "Posts"
@@ -59,3 +60,13 @@ paginate     = 10
     identifier = "tools"
     name       = "Tools"
     url        = "/tools"
+
+  [[menu.main]]
+    identifier = "write-up"
+    name       = "Write Up"
+    url        = "/write-up"
+
+  [[menu.main]]
+    identifier = "whoami"
+    name       = "Whoami"
+    url        = "/whoami"
