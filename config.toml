@@ -70,3 +70,8 @@ paginate     = 10
     identifier = "whoami"
     name       = "Whoami"
     url        = "/whoami"
+
+  [[menu.main]]
+    identifier = "cheat-sheet"
+    name       = "Chear Sheet"
+    url        = "/cheat-sheet"
