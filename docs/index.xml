@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gohanckz</title>
+    <link>https://gohanckz.github.io/</link>
+    <description>Recent content on Gohanckz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 06 Oct 2020 14:25:04 -0300</lastBuildDate><atom:link href="https://gohanckz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Guillotine</title>
+      <link>https://gohanckz.github.io/tools/guillotine/</link>
+      <pubDate>Tue, 06 Oct 2020 14:25:04 -0300</pubDate>
+      
+      <guid>https://gohanckz.github.io/tools/guillotine/</guid>
+      <description>Guillotine - HTTP Security Headers Finder
+Finds the security headers that are not enabled in a specific domain. gohanckz@R3D734M:/opt/scanning/guillotine$ ./guillotine.py -t https://www.example.com |\____/|, _ | | \ {\, | | `,__.&#39;\` ___|______|____&#39;, :__. / | (__) | / `, `. / !______| L\J&#39; `. :_______________________________i. | GUILLOTINE | | By Gohanckz | !___________W0lf_F4ng____________! DATE:2020-10-06 16:59:56.615314 +-----------------------------------+---------------------------------------+ | [+] ENABLED SECURITY HEADERS | [x] MISSING SECURITY HEADERS | +-----------------------------------+---------------------------------------+ | Expect-CT | Public-Key-Pins-Report-Only | | X-XSS-Protection | Content-Security-Policy | | X-Frame-Options | X-Powered-By | | X-Content-Type-Options | Strict-Transport-Security | | | Feature-Policy | | | Content-Security-Policy-Report-Only | | | Public-Key-Pins | | | Referrer-Policy | | | X-Permitted-Cross-Domain | | | Upgrate-Insecure-Requests | +-----------------------------------+---------------------------------------+ HTTP Security Headers List you can detect the following HTTP security headers:</description>
+    </item>
+    
+    <item>
+      <title>Whoami</title>
+      <link>https://gohanckz.github.io/whoami/</link>
+      <pubDate>Tue, 06 Oct 2020 14:13:20 -0300</pubDate>
+      
+      <guid>https://gohanckz.github.io/whoami/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Write Up</title>
+      <link>https://gohanckz.github.io/write-up/</link>
+      <pubDate>Tue, 06 Oct 2020 12:41:19 -0300</pubDate>
+      
+      <guid>https://gohanckz.github.io/write-up/</guid>
+      <description>TEST WRITE UPS</description>
+    </item>
+    
+    <item>
+      <title>Posts</title>
+      <link>https://gohanckz.github.io/posts/</link>
+      <pubDate>Mon, 05 Oct 2020 23:13:32 -0300</pubDate>
+      
+      <guid>https://gohanckz.github.io/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tools</title>
+      <link>https://gohanckz.github.io/tools/</link>
+      <pubDate>Mon, 05 Oct 2020 23:11:01 -0300</pubDate>
+      
+      <guid>https://gohanckz.github.io/tools/</guid>
+      <description>&amp;quot;{&amp;quot;Guillotine&amp;quot;}&amp;quot;</description>
+    </item>
+    
+  </channel>
+</rss>
