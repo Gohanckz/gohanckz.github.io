@@ -3,8 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://gohanckz.github.io/about-me/</loc>
-    <lastmod>2020-10-06T00:37:52-03:00</lastmod>
+    <loc>https://gohanckz.github.io/</loc>
+    <lastmod>2020-10-06T14:25:04-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gohanckz.github.io/tools/guillotine/</loc>
+    <lastmod>2020-10-06T14:25:04-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gohanckz.github.io/tools/</loc>
+    <lastmod>2020-10-06T14:25:04-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gohanckz.github.io/whoami/</loc>
+    <lastmod>2020-10-06T14:13:20-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gohanckz.github.io/write-up/</loc>
+    <lastmod>2020-10-06T12:41:19-03:00</lastmod>
   </url>
   
   <url>
@@ -19,10 +39,6 @@
   
   <url>
     <loc>https://gohanckz.github.io/blog/</loc>
-  </url>
-  
-  <url>
-    <loc>https://gohanckz.github.io/</loc>
   </url>
   
   <url>
