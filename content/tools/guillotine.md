@@ -84,11 +84,10 @@ The use is very simple.
 python guillotine.py -t https://www.domain.com
 ```
 
-[![asciicast](https://asciinema.org/a/mpb3DUKY4svDfze7i2BADMS5E.svg)](https://asciinema.org/a/mpb3DUKY4svDfze7i2BADMS5E)
+
 
 DEVELOPED| CONTACT | VERSION
 ----------|---------|-------
 Gohanckz |gohanckz@lesand.cl | 1.0
 W0lf_F4ng|ms@w0lff4ng.org| 1.0
-
 
