@@ -73,5 +73,5 @@ paginate     = 10
 
   [[menu.main]]
     identifier = "cheat-sheet"
-    name       = "Chear Sheet"
+    name       = "Cheat Sheet"
     url        = "/cheat-sheet"
