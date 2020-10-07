@@ -17,7 +17,7 @@ to one day contribute as much as possible as part of a redteam
 
 Certifications:
    |_____ eJPT.
-   |_____ Road to eWPT.
+   |_____ Road to eWAPT.
 
 Courses:
    |_____Developing Ethical Hacking Tools with Python.
