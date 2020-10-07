@@ -11,7 +11,7 @@ Gohanckz@R3d734M# whoami
 Hello world,
 My name is Ivan Gonzalez...
 I am a guy with a passion for cybersecurity and computer science.
-I am currently studying computer engineering and I certify myself 
+I am currently studying computer engineering and I am certifing myself 
 to one day contribute as much as possible as part of a redteam
 
 
