@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cheat-sheets on Gohanckz</title>
+    <link>https://gohanckz.github.io/cheat-sheet/</link>
+    <description>Recent content in Cheat-sheets on Gohanckz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 06 Oct 2020 18:41:20 -0300</lastBuildDate><atom:link href="https://gohanckz.github.io/cheat-sheet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Router/Switch Configuration</title>
+      <link>https://gohanckz.github.io/cheat-sheet/router-configuration/</link>
+      <pubDate>Tue, 06 Oct 2020 18:41:20 -0300</pubDate>
+      
+      <guid>https://gohanckz.github.io/cheat-sheet/router-configuration/</guid>
+      <description>ASIGNAR NOMBRE A SWITCH  Activar modo de configuracion de swicth [Modo privilegiado]  enable Habilitar modo de configuracion del swicth  configure terminal Asignar nombre a swicth  hostname nombre_switch Salir de modo configuracion y modo privilegiado  exit exit PROPORCIONAR ACCESO SEGURO A SWITCH  Activar modo de configuracion de swicth [Modo privilegiado]  enable Habilitar modo de configuracion del swicth  configure terminal Entrar al modo config-line  line console 0 Asignar contraseña al swicth  password contraseña_deseada Habilitar login para peticion de contraseña al swicth  login Salir de modo de configuracion y modo privilegiado  exit exit ACCESO SEGURO AL MODO PRIVILEGIADO  Activar modo de configuracion de swicth  enable Habilitar modo de configuracion de swicth [Modo privilegiado]  configure terminal Establecer contraseña para modo privilegiado seguro [solo elegir uno de los dos comandos] -&amp;gt; Enabled secrect = Encriptada  enable password contraseña_deseada enable secret contraseña_deseada Salir de modo privilegiado y/o configuracion  exit PROTEGER ACCESO REMOTO  Activar el modo de configuracion  enable Entrar al modo de configuracion del swicth  configure terminal Entrar al modo de line-vty   line vty 0 15 Asignar ontraseña remota  password contraseña_deseada Habilitar login para peticion de contraseña  login Salir de modo privilegiado y/o configuracion  exit VERIFICAR SI SE AGREGARON LAS CONTRASEÑAS  Mostrar configuracion  show running-config ENCRIPTAR LAS CONTRASEÑAS DE CONSOLA Y ENABLE  Activar modo privilegiado  enable Entrar en modo de configuracion del swicth  confure terminal Encriptar contraseña_deseada  service password-encryption Salir de modo privilegiado y/o configuracion  exit CONFIGURAR AVISO O MENSAJE EN SWITCH  Activar modo privilegiado  enable Entrar en modo configuracion del swicth  configure terminal Agregar mensaje o aviso en swicth  banner motd &amp;quot;Mensaje deseado&amp;quot; Salir de modo de configuracon o privilegiado  exit GUARDAR LOS ARCHIVOS DE CONFIGURACION EN LA NVRAM  Activar modo privilegiado  enable Guardar los archivos en nvram  copy running-config startup-config Confirmar  [ENTER] Salir de modo privilegiado o de configuracion  exit CONFIGURAR DIRECCIÓN IP  Activar modo privilegiado  enable Entrar en modo de configuracion del terminal  configure terminal Entramos al interface vlan 1  interface vlan 1 Asignamos IP junto a su máscara  ip address direccion_ip mascara_correspondiente Mencionamos que no se reinicie el switch  no shutdown </description>
+    </item>
+    
+  </channel>
+</rss>
