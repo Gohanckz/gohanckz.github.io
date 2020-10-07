@@ -4,7 +4,7 @@ date: 2020-10-06T14:13:20-03:00
 draft: false
 ---
 
-![Gohanckz](static/img/perfil_c.png)
+![Gohanckz](../static/img/perfil_c.png)
 
 ```
 Gohanckz@R3d734M# whoami
