@@ -7,27 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 07 Oct 2020 14:07:49 -0300</lastBuildDate><atom:link href="https://gohanckz.github.io/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Guía cvss</title>
-      <link>https://gohanckz.github.io/posts/cvss/</link>
-      <pubDate>Wed, 07 Oct 2020 14:07:49 -0300</pubDate>
-      
-      <guid>https://gohanckz.github.io/posts/cvss/</guid>
-      <description>Common Vulnerability Sciring System v3.1: Guía de usuario El common vulnerability Scoring System (CVSS) es un framework abierto para comunicar las características y la gravedad de las vulnerabilidades del software. CVSS consta de tres grupos:
-  Base: Represneta las cualidades intrínsecas de una vulnerabilidad que son constantes a lo largo del tiempo y en todos los entornos de usuario.
-  Temporal: Refleja las características de una vulnerabilidad que cambian con el tiempo.</description>
-    </item>
-    
-    <item>
-      <title>Information_disclosure</title>
-      <link>https://gohanckz.github.io/posts/information_disclosure/</link>
-      <pubDate>Wed, 07 Oct 2020 12:12:21 -0300</pubDate>
-      
-      <guid>https://gohanckz.github.io/posts/information_disclosure/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Tue, 06 Oct 2020 14:25:04 -0300</lastBuildDate><atom:link href="https://gohanckz.github.io/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Guillotine</title>
       <link>https://gohanckz.github.io/tools/guillotine/</link>
