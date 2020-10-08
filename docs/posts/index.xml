@@ -1,0 +1,147 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Gohanckz</title>
+        <link>https://gohanckz.github.io/posts/</link>
+        <description>Recent content in Posts on Gohanckz</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+        <lastBuildDate>Wed, 07 Oct 2020 14:07:49 -0300</lastBuildDate>
+        <atom:link href="https://gohanckz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Guía cvss</title>
+            <link>https://gohanckz.github.io/posts/cvss/</link>
+            <pubDate>Wed, 07 Oct 2020 14:07:49 -0300</pubDate>
+            
+            <guid>https://gohanckz.github.io/posts/cvss/</guid>
+            <description>Common Vulnerability Sciring System v3.1: Guía de usuario El common vulnerability Scoring System (CVSS) es un framework abierto para comunicar las características y la gravedad de las vulnerabilidades del software. CVSS consta de tres grupos:
+  Base: Represneta las cualidades intrínsecas de una vulnerabilidad que son constantes a lo largo del tiempo y en todos los entornos de usuario.
+  Temporal: Refleja las características de una vulnerabilidad que cambian con el tiempo.</description>
+            <content type="html"><![CDATA[<h3 id="common-vulnerability-sciring-system-v31-guía-de-usuario">Common Vulnerability Sciring System v3.1: Guía de usuario</h3>
+<p>El common vulnerability Scoring System (CVSS) es un framework abierto para comunicar las características y la gravedad de las vulnerabilidades del software. CVSS consta de tres grupos:</p>
+<ul>
+<li>
+<p>Base: Represneta las cualidades intrínsecas de una vulnerabilidad que son constantes a lo largo del tiempo y en todos los entornos de usuario.</p>
+</li>
+<li>
+<p>Temporal: Refleja las características de una vulnerabilidad que cambian con el tiempo.</p>
+</li>
+<li>
+<p>Ambiental: Representa las características de una vulnerabilidad que son exclusivas de un usuario.</p>
+</li>
+</ul>
+<h3 id="métricas-de-explotación">Métricas de explotación</h3>
+<h4 id="vector-de-ataque">Vector de ataque</h4>
+<p>Esta métrica refleja el contexto en el que es posible la explotación de vulnerabilidades. Este valor de métrica (y, en consecuencia, la puntuación base) será mayor cuanto más remoto (lógica y físicamente) pueda ser un atacante para explotar el componente vulnerable. La suposición es que la cantidad de atacantes potenciales para una vulnerabilidad que podría explotarse a través de una red es mayor que la cantidad de atacantes potenciales que podrían aprovechar una vulnerabilidad que requiera acceso físico a un dispositivo y, por lo tanto, garantiza una puntuación base mayor.</p>
+<h3 id="guía-de-puntuación">Guía de puntuación</h3>
+<h4 id="puntuación-cvss-en-el-ciclo-de-vida-del-exploit">Puntuación CVSS en el ciclo de vida del exploit</h4>
+<p>Al comprender cuando puntuar el impacto de las vulnerabilidades, los analistas deben limitar los impactos a un impacto final razonable que estén seguros de que un atacante puede lograr. La capacidad para causar este impacto debe estar respaldada por su subpuntaje de Explotabilidad como mínimo, pero también puede incluir detalles de la descripción de la vulnerabilidad. Por ejemplo, considere las siguientes dos vulnerabilidades.</p>
+<h4 id="vulnerabilidad-1-solicitud-servidor-web">Vulnerabilidad 1 {Solicitud servidor web}</h4>
+<p>Un atacante remoto no autenticado puede enviar una solicitud trivial y elaborada a un serbidor web que hace que el servidor web revele la contraseña del texto sin formato de la cuenta raíz (administrador). El analista solo sabe a partir de las métricas de la puntuación secundaria de explotabilidad y la descripción de la vulnerabilidad que el atacante tiene acceso apara enviar una solicitud elaborada al servidor web para aprovechar la vulnerabilidad.</p>
+<p>El impacto debería detenerse allí, Si bien un atacante puede usar estas credenciales para ejecutar código posteriormente como administrador, no se sabe si el atacante tiene acceso a un indicador de inicio de sesión o método para ejecutar comandos con esas credenciales. Obtener acceso a esta contraseñá representa una pérdida directa y grave de confidencialidad únicamente:</p>
+<h4 id="detalle">Detalle</h4>
+<table>
+<thead>
+<tr>
+<th>Indicador</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vector de ataque (AV)</td>
+<td>Network (N), Explotación remota (a través de uno o mas routers.)</td>
+</tr>
+<tr>
+<td>Complejidad de ataque (AC)</td>
+<td>Low (L), No existen condiciones de acceso especializadas o circuntancias atenuantes. Un atacante puede esperar un éxito repetible contral el componente vulnerable</td>
+</tr>
+<tr>
+<td>Privilegios requeridos (PR)</td>
+<td>None (N), El atacante no está autorizado antes del ataque y, por lo tanto, no requiere ningún acceso a la configuración de los archivos para llevar a cabo un ataque.</td>
+</tr>
+<tr>
+<td>Interacción de usuario (UI)</td>
+<td>None (N), El sistema vulnerable puede explotarse sin la interacción de ningún usuario.</td>
+</tr>
+<tr>
+<td>Alcance (s)</td>
+<td>Unchanged(U), Una vulnerabilidad explotada solo puede afectar a los recursos administrados por la misma autoridad de seguridad. (El componente vulnerable y el componente afectado son el mismo)</td>
+</tr>
+<tr>
+<td>Confidencialidad (C)</td>
+<td>Low (L), Hay cierta pérdida de confidencialidad.</td>
+</tr>
+<tr>
+<td>Integridad (I)</td>
+<td>None (N), No hay pérdida de integridad dentro del componente afectado.</td>
+</tr>
+<tr>
+<td>Disponibilidad (A)</td>
+<td>None (N), No hay perdida de disponibilidad dentro del componente afectado.</td>
+</tr>
+</tbody>
+</table>
+<pre><code>Nota: 5.3 (Medio) | 3.1 / AV: N / AC: L / PR: N / UI: N / S: U / C: H / I: N / A: N
+</code></pre><h4 id="vulnerabilidad-2-bof-de-adobe-acrobat-cve-2009-0658">Vulnerabilidad 2 {BoF de Adobe Acrobat (CVE-2009-0658)}</h4>
+<p>Adobe Acrobat y Reader versión 9.0 y anteriores son vulnerables a un desbordamiento del búfer, causado por una verificación de límites incorrecta al analizar un flujo de imágenes JBIG2 con formato incorrecto incrustado en un documento PDF. Al persuadir a una víctima para que abra un archivo PDF malicioso, un atacante remoto podría desbordar un búfer y ejecutar código arbitrario en el sistema con los privilegios de la víctima o hacer que la aplicación se bloquee.</p>
+<p>La vulnerabilidad se aprovecha convenciendo a la víctima de que abra un documento malicioso en un sistema que utiliza una versión vulnerable de Adobe Acrobat o Reader. Un atacante debe entregar un documento malicioso a la víctima y confía en que el usuario lo abra. Entonces, la ejecución del código lograda por el atacante depende del nivel de privilegios del usuario en el sistema y podría tener como resultado un alto impacto en la confidencialidad, la integridad y la disponibilidad.</p>
+<table>
+<thead>
+<tr>
+<th>Indicador</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vector de ataque (AV)</td>
+<td>Local (L), Una falla en el software de documentos local que se desencadena al abrir un documento con el formato incorrecto</td>
+</tr>
+<tr>
+<td>Complejidad de ataque (AC)</td>
+<td>Low (L), No existen condiciones de acceso especializadas o circuntancias atenuantes. Un atacante puede esperar un éxito repetible contral el componente vulnerable</td>
+</tr>
+<tr>
+<td>Privilegios requeridos (PR)</td>
+<td>None (N), El atacante no está autorizado antes del ataque y, por lo tanto, no requiere ningún acceso a la configuración de los archivos para llevar a cabo un ataque.</td>
+</tr>
+<tr>
+<td>Interacción de usuario (UI)</td>
+<td>Required (R), La victima necesita abrir el documento con formato incorrecto</td>
+</tr>
+<tr>
+<td>Interacción de usuario (UI)</td>
+<td>None (N), El sistema vulnerable puede explotarse sin la interacción de ningún usuario.</td>
+</tr>
+<tr>
+<td>Confidencialidad (C)</td>
+<td>High (H),Suponiendo un impacto en el peor de los casos de que la víctima tenga privilegios altos en el sistema afectado.</td>
+</tr>
+<tr>
+<td>Integridad (I)</td>
+<td>High (H), Suponiendo un impacto en el peor de los casos de que la víctima tenga privilegios altos en el sistema afectado.</td>
+</tr>
+<tr>
+<td>Disponibilidad (A)</td>
+<td>High (H), Suponiendo un impacto en el peor de los casos de que la víctima tenga privilegios altos en el sistema afectado.</td>
+</tr>
+</tbody>
+</table>
+<pre><code>Nota: 7.8 (Alto) | CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+</code></pre>]]></content>
+        </item>
+        
+        <item>
+            <title>Information_disclosure</title>
+            <link>https://gohanckz.github.io/posts/information_disclosure/</link>
+            <pubDate>Wed, 07 Oct 2020 12:12:21 -0300</pubDate>
+            
+            <guid>https://gohanckz.github.io/posts/information_disclosure/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+    </channel>
+</rss>

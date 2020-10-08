@@ -3,12 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://gohanckz.github.io/cheat-sheet/</loc>
-    <lastmod>2020-10-06T18:41:20-03:00</lastmod>
+    <loc>https://gohanckz.github.io/</loc>
+    <lastmod>2020-10-07T14:07:49-03:00</lastmod>
   </url>
   
   <url>
-    <loc>https://gohanckz.github.io/</loc>
+    <loc>https://gohanckz.github.io/posts/cvss/</loc>
+    <lastmod>2020-10-07T14:07:49-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gohanckz.github.io/posts/</loc>
+    <lastmod>2020-10-07T14:07:49-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gohanckz.github.io/tags/</loc>
+    <lastmod>2020-10-07T14:07:49-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gohanckz.github.io/tags/untagged/</loc>
+    <lastmod>2020-10-07T14:07:49-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gohanckz.github.io/posts/information_disclosure/</loc>
+    <lastmod>2020-10-07T12:12:21-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gohanckz.github.io/cheat-sheet/</loc>
     <lastmod>2020-10-06T18:41:20-03:00</lastmod>
   </url>
   
@@ -53,10 +78,6 @@
   
   <url>
     <loc>https://gohanckz.github.io/series/</loc>
-  </url>
-  
-  <url>
-    <loc>https://gohanckz.github.io/tags/</loc>
   </url>
   
 </urlset>

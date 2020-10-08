@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>untagged on Gohanckz</title>
+    <link>https://gohanckz.github.io/tags/untagged/</link>
+    <description>Recent content in untagged on Gohanckz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Wed, 07 Oct 2020 14:07:49 -0300</lastBuildDate><atom:link href="https://gohanckz.github.io/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Guía cvss</title>
+      <link>https://gohanckz.github.io/posts/cvss/</link>
+      <pubDate>Wed, 07 Oct 2020 14:07:49 -0300</pubDate>
+      
+      <guid>https://gohanckz.github.io/posts/cvss/</guid>
+      <description>Common Vulnerability Sciring System v3.1: Guía de usuario El common vulnerability Scoring System (CVSS) es un framework abierto para comunicar las características y la gravedad de las vulnerabilidades del software. CVSS consta de tres grupos:
+  Base: Represneta las cualidades intrínsecas de una vulnerabilidad que son constantes a lo largo del tiempo y en todos los entornos de usuario.
+  Temporal: Refleja las características de una vulnerabilidad que cambian con el tiempo.</description>
+    </item>
+    
+    <item>
+      <title>Information_disclosure</title>
+      <link>https://gohanckz.github.io/posts/information_disclosure/</link>
+      <pubDate>Wed, 07 Oct 2020 12:12:21 -0300</pubDate>
+      
+      <guid>https://gohanckz.github.io/posts/information_disclosure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Guillotine</title>
+      <link>https://gohanckz.github.io/tools/guillotine/</link>
+      <pubDate>Tue, 06 Oct 2020 14:25:04 -0300</pubDate>
+      
+      <guid>https://gohanckz.github.io/tools/guillotine/</guid>
+      <description>Guillotine - HTTP Security Headers Finder
+Finds the security headers that are not enabled in a specific domain. gohanckz@R3D734M:/opt/scanning/guillotine$ ./guillotine.py -t https://www.example.com |\____/|, _ | | \ {\, | | `,__.&#39;\` ___|______|____&#39;, :__. / | (__) | / `, `. / !______| L\J&#39; `. :_______________________________i. | GUILLOTINE | | By Gohanckz | !___________W0lf_F4ng____________! DATE:2020-10-06 16:59:56.615314 +-----------------------------------+---------------------------------------+ | [+] ENABLED SECURITY HEADERS | [x] MISSING SECURITY HEADERS | +-----------------------------------+---------------------------------------+ | Expect-CT | Public-Key-Pins-Report-Only | | X-XSS-Protection | Content-Security-Policy | | X-Frame-Options | X-Powered-By | | X-Content-Type-Options | Strict-Transport-Security | | | Feature-Policy | | | Content-Security-Policy-Report-Only | | | Public-Key-Pins | | | Referrer-Policy | | | X-Permitted-Cross-Domain | | | Upgrate-Insecure-Requests | +-----------------------------------+---------------------------------------+ HTTP Security Headers List you can detect the following HTTP security headers:</description>
+    </item>
+    
+  </channel>
+</rss>
