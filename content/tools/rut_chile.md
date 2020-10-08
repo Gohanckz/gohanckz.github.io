@@ -49,3 +49,5 @@ python3 rutchile.py -d
 ```
 python3 rutchile.py -d -o <ruta/archivo.txt>
 ```
+
+**Nota**: Esta herramienta fue construida para ser utilizada de manera ética, no me hago responsable por los usos mal intencionados que pueda darle una tercera persona. 
