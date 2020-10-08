@@ -27,7 +27,6 @@ git clone https://github.com/Gohanckz/rutchile.git
 
 ```
 pip install -r requirements.txt
-
 ```
 
 #### Uso
