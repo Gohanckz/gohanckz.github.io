@@ -6,7 +6,7 @@ theme = "hello-friend-ng"
 paginate     = 10
 
 [params]
-  dateform        = "Oct 03, 2020"
+  dateform        = "Jan 02, 2020"
   dateformShort   = "Oct 03"
   dateformNum     = "2020-01-02"
   dateformNumTime = "2020-01-02 15:04"
