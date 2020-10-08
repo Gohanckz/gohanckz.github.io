@@ -15,7 +15,7 @@
       
       <guid>https://gohanckz.github.io/tools/rutchile/</guid>
       <description>#------------------------------------------------------------ # ---- GENERADOR DE DÍGITOS RUT CHILENOS ----| # ---- Gohanckz ----| # ---- Contact : gohanckz@gmail.cl ----| # ---- Version : 2.0 ----| #------------------------------------------------------------ Genera diccionarios de ruts chilenos con y sin digito verificador para realizar fuerza bruta en tus proyectos de pentesting de manera ética.
-Descarga git clone https://github.com/Gohanckz/rutchile.git Instalación pip install -r requirements.txt Uso  Generar diccionarios sin dígito verificador con RUTS desde 11111111 a 22222222  python3 rutchile.</description>
+Descarga git clone https://github.com/Gohanckz/rutchile.git Instalación pip install -r requirements.txt Uso  Generar diccionario sin dígito verificador  python3 rutchile.py -l Generar diccionario con dígito verificador  python3 rutchile.</description>
     </item>
     
     <item>
