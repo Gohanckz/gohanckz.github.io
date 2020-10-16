@@ -1,8 +1,11 @@
 ---
-title: "Google Hacking"
+title: "Google Hacking & Bing Hacking"
 date: 2020-10-15T22:48:36-03:00
 draft: false
 ---
+
+
+### Google Hacking
 
 Buscar por dominio
 
@@ -118,4 +121,18 @@ filetype:cfg #kickstart
 Busqueda de cuentas  / VPN /SPOTIFU / MEGA / DROPBOX / SOFTWARE / ETC
 ```
 inurl:pastebin.com <string>
+```
+
+### Bing Hacking
+
+Buscar por ip
+```
+ip:<dirección_ip>
+ip:104.20.65.82
+```
+
+Buscar por localización del país
+```
+location:<extención_pais>
+location:cl
 ```
