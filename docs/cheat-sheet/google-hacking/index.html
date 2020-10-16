@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="Buscar por dominio
+site:&amp;lt;example.cl&amp;gt; Buscar por dominio omitiendo el sitio web principal
+site:example.cl&amp;gt; -site:&amp;lt;www.example.cl&amp;gt; Buscar en el título de la web
+intitle:&amp;lt;string_here&amp;gt; intitle:&amp;quot;index of/&amp;quot; site:.cl Buscar en la url
+inurl:&amp;lt;string_here&amp;gt; inurl:&amp;quot;admin.php&amp;quot; Buscar string que coincida en la url
+allinurl:&amp;quot;&amp;lt;string_here&amp;gt;&amp;quot; allinurl:&amp;quot;admin.php&amp;quot; Buscar en el contenido de la página
+[intex:&amp;lt;string&amp;gt;] intext:&amp;quot;admin&amp;quot; intex:&amp;quot;password&amp;quot; Buscar texto que se coincida con el string
+allintex:&amp;quot;&amp;lt;string&amp;gt;&amp;quot; allintext:&amp;quot;password&amp;quot; Buscar por tipo de fichero
+filetype:&amp;lt;extención&amp;gt; filetype:&amp;lt;xls&amp;gt; Buscar por extenciiones que terminen en un parámetro determinado" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://gohanckz.github.io/cheat-sheet/google-hacking/" />
+
+
+    <title>
+        
+            Google Hacking :: Gohanckz  — Road to red team
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.393856bf2c430bb6c01d7af07c6fe966e7cce8073435cfbbc46e590bab7405ef.css">
+
+
+
+
+
+
+<meta itemprop="name" content="Google Hacking">
+<meta itemprop="description" content="Buscar por dominio
+site:&lt;example.cl&gt; Buscar por dominio omitiendo el sitio web principal
+site:example.cl&gt; -site:&lt;www.example.cl&gt; Buscar en el título de la web
+intitle:&lt;string_here&gt; intitle:&quot;index of/&quot; site:.cl Buscar en la url
+inurl:&lt;string_here&gt; inurl:&quot;admin.php&quot; Buscar string que coincida en la url
+allinurl:&quot;&lt;string_here&gt;&quot; allinurl:&quot;admin.php&quot; Buscar en el contenido de la página
+[intex:&lt;string&gt;] intext:&quot;admin&quot; intex:&quot;password&quot; Buscar texto que se coincida con el string
+allintex:&quot;&lt;string&gt;&quot; allintext:&quot;password&quot; Buscar por tipo de fichero
+filetype:&lt;extención&gt; filetype:&lt;xls&gt; Buscar por extenciiones que terminen en un parámetro determinado">
+<meta itemprop="datePublished" content="2020-10-15T22:48:36-03:00" />
+<meta itemprop="dateModified" content="2020-10-15T22:48:36-03:00" />
+<meta itemprop="wordCount" content="193">
+<meta itemprop="image" content="https://gohanckz.github.io/"/>
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://gohanckz.github.io/"/>
+
+<meta name="twitter:title" content="Google Hacking"/>
+<meta name="twitter:description" content="Buscar por dominio
+site:&lt;example.cl&gt; Buscar por dominio omitiendo el sitio web principal
+site:example.cl&gt; -site:&lt;www.example.cl&gt; Buscar en el título de la web
+intitle:&lt;string_here&gt; intitle:&quot;index of/&quot; site:.cl Buscar en la url
+inurl:&lt;string_here&gt; inurl:&quot;admin.php&quot; Buscar string que coincida en la url
+allinurl:&quot;&lt;string_here&gt;&quot; allinurl:&quot;admin.php&quot; Buscar en el contenido de la página
+[intex:&lt;string&gt;] intext:&quot;admin&quot; intex:&quot;password&quot; Buscar texto que se coincida con el string
+allintex:&quot;&lt;string&gt;&quot; allintext:&quot;password&quot; Buscar por tipo de fichero
+filetype:&lt;extención&gt; filetype:&lt;xls&gt; Buscar por extenciiones que terminen en un parámetro determinado"/>
+
+
+
+    <meta property="og:title" content="Google Hacking" />
+<meta property="og:description" content="Buscar por dominio
+site:&lt;example.cl&gt; Buscar por dominio omitiendo el sitio web principal
+site:example.cl&gt; -site:&lt;www.example.cl&gt; Buscar en el título de la web
+intitle:&lt;string_here&gt; intitle:&quot;index of/&quot; site:.cl Buscar en la url
+inurl:&lt;string_here&gt; inurl:&quot;admin.php&quot; Buscar string que coincida en la url
+allinurl:&quot;&lt;string_here&gt;&quot; allinurl:&quot;admin.php&quot; Buscar en el contenido de la página
+[intex:&lt;string&gt;] intext:&quot;admin&quot; intex:&quot;password&quot; Buscar texto que se coincida con el string
+allintex:&quot;&lt;string&gt;&quot; allintext:&quot;password&quot; Buscar por tipo de fichero
+filetype:&lt;extención&gt; filetype:&lt;xls&gt; Buscar por extenciiones que terminen en un parámetro determinado" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://gohanckz.github.io/cheat-sheet/google-hacking/" />
+<meta property="og:image" content="https://gohanckz.github.io/"/>
+<meta property="article:published_time" content="2020-10-15T22:48:36-03:00" />
+<meta property="article:modified_time" content="2020-10-15T22:48:36-03:00" /><meta property="og:site_name" content="Gohanckz" />
+
+
+
+
+
+
+    <meta property="article:published_time" content="2020-10-15 22:48:36 -0300 -03" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="dark-theme">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text"># rm -rf /gohanckz</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="https://gohanckz.github.io/cheat-sheet">C-sheet</a></li><li><a href="https://gohanckz.github.io/posts">Posts</a></li><li><a href="https://gohanckz.github.io/tools">Tools</a></li><li><a href="https://gohanckz.github.io/whoami">Whoami</a></li><li><a href="https://gohanckz.github.io/write-up">Write Up</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="https://gohanckz.github.io/cheat-sheet/google-hacking/">Google Hacking</a></h2>
+
+            
+
+            
+
+            <div class="post-content">
+                <p>Buscar por dominio</p>
+<pre><code>site:&lt;example.cl&gt;
+</code></pre><p>Buscar por dominio omitiendo el sitio web principal</p>
+<pre><code>site:example.cl&gt; -site:&lt;www.example.cl&gt;
+</code></pre><p>Buscar en el título de la web</p>
+<pre><code>intitle:&lt;string_here&gt;
+intitle:&quot;index of/&quot; site:.cl
+</code></pre><p>Buscar en la url</p>
+<pre><code>inurl:&lt;string_here&gt;
+inurl:&quot;admin.php&quot;
+</code></pre><p>Buscar string que coincida en la url</p>
+<pre><code>allinurl:&quot;&lt;string_here&gt;&quot;
+allinurl:&quot;admin.php&quot;
+</code></pre><p>Buscar en el contenido de la página</p>
+<pre><code>[intex:&lt;string&gt;]
+intext:&quot;admin&quot; intex:&quot;password&quot;
+</code></pre><p>Buscar texto que se coincida con el string</p>
+<pre><code>allintex:&quot;&lt;string&gt;&quot;
+allintext:&quot;password&quot;
+</code></pre><p>Buscar por tipo de fichero</p>
+<pre><code>filetype:&lt;extención&gt;
+filetype:&lt;xls&gt;
+</code></pre><p>Buscar por extenciiones que terminen en un parámetro determinado</p>
+<pre><code>ext:&lt;termino&gt;
+ext:pdf
+</code></pre><p>Buscar con operador lógico and &amp;&amp;</p>
+<pre><code>inurl:admin &amp;&amp; ext:sql
+</code></pre><p>Buscar con operador lógico or ||</p>
+<pre><code>inurl:admin || ext:sql
+</code></pre><p>Realizar busqueda literal por &ldquo;strings&rdquo;</p>
+<pre><code>&quot;busco un ...&quot;
+</code></pre><p>Forzar que salga una palabra en la búsqueda [&ldquo;string +palabra&rdquo;]</p>
+<pre><code>busco +laptop
+</code></pre><p>Filtrar o quitar palabras en búsqueda [-&lt;string_here&gt;]</p>
+<pre><code>compro +una laptop -desktop
+</code></pre><p>Comodín de palabra</p>
+<pre><code>&quot;Compro laptop nueva&quot;
+&quot;* laptop nueva&quot;
+&quot;compro * nueva&quot;
+&quot;compro laptop *&quot;
+</code></pre><p>Comodín de carácter (reemplaza solo un carácter)</p>
+<pre><code>m.trix
+</code></pre><p>Buscar por versiones de sevidor</p>
+<pre><code>intittle:index.of &quot;server at&quot;
+</code></pre><p>Buscar por mensajes de error</p>
+<pre><code>filetype:xls user password
+</code></pre><p>Buscar backup</p>
+<pre><code>intitle:index.of inurl:backup
+</code></pre><p>Busqueda de archivos de respaldo</p>
+<pre><code>filetype:cfg #kickstart
+</code></pre><p>Busqueda de cuentas  / VPN /SPOTIFU / MEGA / DROPBOX / SOFTWARE / ETC</p>
+<pre><code>inurl:pastebin.com &lt;string&gt;
+</code></pre>
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+            
+                <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span>
+            <span><a href="https://gohanckz.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+          </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.dc716e9092c9820b77f96da294d0120aeeb189b5bcea9752309ebea27fd53bbe6b13cffb2aca8ecf32525647ceb7001f76091de4199ac5a3caa432c070247f5b.js" integrity="sha512-3HFukJLJggt3&#43;W2ilNASCu6xibW86pdSMJ6&#43;on/VO75rE8/7KsqOzzJSVkfOtwAfdgkd5BmaxaPKpDLAcCR/Ww=="></script>
+
+
+
+    </body>
+</html>

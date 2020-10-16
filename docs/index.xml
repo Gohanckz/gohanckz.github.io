@@ -7,7 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 07 Oct 2020 22:46:29 -0300</lastBuildDate><atom:link href="https://gohanckz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Oct 2020 22:48:36 -0300</lastBuildDate><atom:link href="https://gohanckz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google Hacking</title>
+      <link>https://gohanckz.github.io/cheat-sheet/google-hacking/</link>
+      <pubDate>Thu, 15 Oct 2020 22:48:36 -0300</pubDate>
+      
+      <guid>https://gohanckz.github.io/cheat-sheet/google-hacking/</guid>
+      <description>Buscar por dominio
+site:&amp;lt;example.cl&amp;gt; Buscar por dominio omitiendo el sitio web principal
+site:example.cl&amp;gt; -site:&amp;lt;www.example.cl&amp;gt; Buscar en el título de la web
+intitle:&amp;lt;string_here&amp;gt; intitle:&amp;quot;index of/&amp;quot; site:.cl Buscar en la url
+inurl:&amp;lt;string_here&amp;gt; inurl:&amp;quot;admin.php&amp;quot; Buscar string que coincida en la url
+allinurl:&amp;quot;&amp;lt;string_here&amp;gt;&amp;quot; allinurl:&amp;quot;admin.php&amp;quot; Buscar en el contenido de la página
+[intex:&amp;lt;string&amp;gt;] intext:&amp;quot;admin&amp;quot; intex:&amp;quot;password&amp;quot; Buscar texto que se coincida con el string
+allintex:&amp;quot;&amp;lt;string&amp;gt;&amp;quot; allintext:&amp;quot;password&amp;quot; Buscar por tipo de fichero
+filetype:&amp;lt;extención&amp;gt; filetype:&amp;lt;xls&amp;gt; Buscar por extenciiones que terminen en un parámetro determinado</description>
+    </item>
+    
     <item>
       <title>Generador de Ruts chilenos</title>
       <link>https://gohanckz.github.io/tools/rutchile/</link>
