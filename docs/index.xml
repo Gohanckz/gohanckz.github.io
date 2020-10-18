@@ -9,12 +9,12 @@
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Thu, 15 Oct 2020 22:48:36 -0300</lastBuildDate><atom:link href="https://gohanckz.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Google Hacking</title>
+      <title>Google Hacking &amp; Bing Hacking</title>
       <link>https://gohanckz.github.io/cheat-sheet/google-hacking/</link>
       <pubDate>Thu, 15 Oct 2020 22:48:36 -0300</pubDate>
       
       <guid>https://gohanckz.github.io/cheat-sheet/google-hacking/</guid>
-      <description>Buscar por dominio
+      <description>Google Hacking Buscar por dominio
 site:&amp;lt;example.cl&amp;gt; Buscar por dominio omitiendo el sitio web principal
 site:example.cl&amp;gt; -site:&amp;lt;www.example.cl&amp;gt; Buscar en el título de la web
 intitle:&amp;lt;string_here&amp;gt; intitle:&amp;quot;index of/&amp;quot; site:.cl Buscar en la url
@@ -80,7 +80,7 @@ Finds the security headers that are not enabled in a specific domain. gohanckz@R
       <pubDate>Tue, 06 Oct 2020 14:13:20 -0300</pubDate>
       
       <guid>https://gohanckz.github.io/whoami/</guid>
-      <description>Gohanckz@R3d734M# whoami Hello world, My name is Ivan Gonzalez... I am a guy with a passion for cybersecurity and computer science. I am currently studying computer engineering and I am certifing myself to one day contribute as much as possible as part of a redteam Certifications: |_____ eJPT. |_____ Road to eWAPT. Courses: |_____Developing Ethical Hacking Tools with Python. |_____Introduction to the OWASP API Security Top 10. |_____Web Application Penetration Testing.</description>
+      <description>Gohanckz@R3d734M# whoami Hello world, My name is Ivan Gonzalez... I am a guy with a passion for cybersecurity and computer science. I am currently studying computer engineering and I am certifing myself to one day contribute as much as possible, as part of a redteam Certifications: |_____ eJPT. |_____ Road to eWAPT. Courses: |_____Developing Ethical Hacking Tools with Python. |_____Introduction to the OWASP API Security Top 10. |_____Web Application Penetration Testing.</description>
     </item>
     
     <item>
