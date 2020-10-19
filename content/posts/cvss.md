@@ -71,7 +71,7 @@ La vulnerabilidad se aprovecha convenciendo a la víctima de que abra un documen
 |Complejidad de ataque (AC)|Low (L), No existen condiciones de acceso especializadas o circuntancias atenuantes. Un atacante puede esperar un éxito repetible contral el componente vulnerable|
 |Privilegios requeridos (PR)|None (N), El atacante no está autorizado antes del ataque y, por lo tanto, no requiere ningún acceso a la configuración de los archivos para llevar a cabo un ataque.|
 |Interacción de usuario (UI)|Required (R), La victima necesita abrir el documento con formato incorrecto|
-|Interacción de usuario (UI)|None (N), El sistema vulnerable puede explotarse sin la interacción de ningún usuario.|
+|Alcance | Sin cambios (U), La explotación de la vulnerabilidad puede afectar soloa los recursos administrados por la misma autoridad de seguridad, (El componente afectado y el explotado es el mismo).|
 |Confidencialidad (C)| High (H),Suponiendo un impacto en el peor de los casos de que la víctima tenga privilegios altos en el sistema afectado.|
 |Integridad (I)|  High (H), Suponiendo un impacto en el peor de los casos de que la víctima tenga privilegios altos en el sistema afectado.|
 |Disponibilidad (A) |  High (H), Suponiendo un impacto en el peor de los casos de que la víctima tenga privilegios altos en el sistema afectado.|

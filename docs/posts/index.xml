@@ -112,8 +112,8 @@
 <td>Required (R), La victima necesita abrir el documento con formato incorrecto</td>
 </tr>
 <tr>
-<td>Interacción de usuario (UI)</td>
-<td>None (N), El sistema vulnerable puede explotarse sin la interacción de ningún usuario.</td>
+<td>Alcance</td>
+<td>Sin cambios (U), La explotación de la vulnerabilidad puede afectar soloa los recursos administrados por la misma autoridad de seguridad, (El componente afectado y el explotado es el mismo).</td>
 </tr>
 <tr>
 <td>Confidencialidad (C)</td>
