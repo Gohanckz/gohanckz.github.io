@@ -36,7 +36,7 @@
 <meta itemprop="description" content="Instalar Mongodb en Gnu/Linux usando  Instalar requisitos previos  sudo apt-get install libcurl4 openssl liblzma5  Centro de descargas Mongo DB  https://www.mongodb.com/try/download/community?tck=docs_server  Instalar .deb amd64 mongo DB  sudo dpkg -i install mongodb-linux-*-4.4.1.tgz  Iniciar servicio mongo db  sudo systemctl start mongod  Recargar proceso mongo db  sudo systemctl daemon-reload  Verificar estatus de mongo db  sudo systemctl status mongod  Iniciar mongo db luego de reinicio  sudo systemctl enable mongod  Deteter proceso de mongo db  sudo systemctl stop mongod  Reiniciar proceso de mongo db  sudo systemctl restart mongod  Abrir mongo db  mongo Consultas Mongo db  Mostrar bases de datos  show databases  Mostrar bases de datos (forma 2)  show dbs  Crear base de datos (No se crea hasta que tenga por lo menos un registro)  use &lt;nombre_db&gt; Crear documentos para la base de datos  Crear documento para base de datos (ejemplo Libro), se debe pegar directamente en la terminal.">
 <meta itemprop="datePublished" content="2020-10-20T11:07:35-03:00" />
 <meta itemprop="dateModified" content="2020-10-20T11:07:35-03:00" />
-<meta itemprop="wordCount" content="662">
+<meta itemprop="wordCount" content="706">
 <meta itemprop="image" content="https://gohanckz.github.io/"/>
 
 
@@ -403,6 +403,26 @@ db.books.insert([book5,book6]);
 <pre><code>db.books.deleteMany({
     '_id': ObjectId(&quot;5f8f0bdc42c01e633df9a043&quot;),
 });
+</code></pre><h3 id="operadores-lógicos-y-de-comparación">Operadores lógicos y de comparación</h3>
+<ul>
+<li>Consulta con condicionales AND</li>
+</ul>
+<pre><code>db.inventory.find(
+    {
+        $and : [
+            {
+                qty: {$gt: 25}
+            },
+            {
+                qty: {$lt: 50}
+            }
+        ]
+    }
+).pretty()
+</code></pre><ul>
+<li>Consulta con condicional IN (devuelve todos los documentos que tengas status &ldquo;A&rdquo; o &ldquo;D&rdquo;)</li>
+</ul>
+<pre><code>db.inventory.find({status: {$in: [&quot;A&quot;,&quot;D&quot;]}})
 </code></pre><h3 id="desinstalar-mongo-db">Desinstalar mongo DB</h3>
 <ol>
 <li>Detenemos servicio de mongo DB</li>

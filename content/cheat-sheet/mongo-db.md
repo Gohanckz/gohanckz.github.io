@@ -353,6 +353,31 @@ db.books.deleteMany({
     '_id': ObjectId("5f8f0bdc42c01e633df9a043"),
 });
 ```
+
+### Operadores lógicos y de comparación
+
+* Consulta con condicionales AND
+
+```
+db.inventory.find(
+    {
+        $and : [
+            {
+                qty: {$gt: 25}
+            },
+            {
+                qty: {$lt: 50}
+            }
+        ]
+    }
+).pretty()
+```
+
+* Consulta con condicional IN (devuelve todos los documentos que tengas status "A" o "D")
+
+```
+db.inventory.find({status: {$in: ["A","D"]}})
+```
 ### Desinstalar mongo DB
 
 
