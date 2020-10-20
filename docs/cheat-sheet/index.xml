@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 15 Oct 2020 22:48:36 -0300</lastBuildDate><atom:link href="https://gohanckz.github.io/cheat-sheet/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Oct 2020 11:07:35 -0300</lastBuildDate><atom:link href="https://gohanckz.github.io/cheat-sheet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mongo db</title>
+      <link>https://gohanckz.github.io/cheat-sheet/mongo-db/</link>
+      <pubDate>Tue, 20 Oct 2020 11:07:35 -0300</pubDate>
+      
+      <guid>https://gohanckz.github.io/cheat-sheet/mongo-db/</guid>
+      <description>Instalar Mongodb en Gnu/Linux usando  Instalar requisitos previos  sudo apt-get install libcurl4 openssl liblzma5  Centro de descargas Mongo DB  https://www.mongodb.com/try/download/community?tck=docs_server  Instalar .deb amd64 mongo DB  sudo dpkg -i install mongodb-linux-*-4.4.1.tgz  Iniciar servicio mongo db  sudo systemctl start mongod  Recargar proceso mongo db  sudo systemctl daemon-reload  Verificar estatus de mongo db  sudo systemctl status mongod  Iniciar mongo db luego de reinicio  sudo systemctl enable mongod  Deteter proceso de mongo db  sudo systemctl stop mongod  Reiniciar proceso de mongo db  sudo systemctl restart mongod  Abrir mongo db  mongo Consultas Mongo db  Mostrar bases de datos  show databases  Mostrar bases de datos (forma 2)  show dbs  Crear base de datos (No se crea hasta que tenga por lo menos un registro)  use &amp;lt;nombre_db&amp;gt; Crear documentos para la base de datos  Crear documento para base de datos (ejemplo Libro), se debe pegar directamente en la terminal.</description>
+    </item>
+    
     <item>
       <title>Google Hacking &amp; Bing Hacking</title>
       <link>https://gohanckz.github.io/cheat-sheet/google-hacking/</link>

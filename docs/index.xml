@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Thu, 15 Oct 2020 22:48:36 -0300</lastBuildDate><atom:link href="https://gohanckz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Oct 2020 11:07:35 -0300</lastBuildDate><atom:link href="https://gohanckz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mongo db</title>
+      <link>https://gohanckz.github.io/cheat-sheet/mongo-db/</link>
+      <pubDate>Tue, 20 Oct 2020 11:07:35 -0300</pubDate>
+      
+      <guid>https://gohanckz.github.io/cheat-sheet/mongo-db/</guid>
+      <description>Instalar Mongodb en Gnu/Linux usando  Instalar requisitos previos  sudo apt-get install libcurl4 openssl liblzma5  Centro de descargas Mongo DB  https://www.mongodb.com/try/download/community?tck=docs_server  Instalar .deb amd64 mongo DB  sudo dpkg -i install mongodb-linux-*-4.4.1.tgz  Iniciar servicio mongo db  sudo systemctl start mongod  Recargar proceso mongo db  sudo systemctl daemon-reload  Verificar estatus de mongo db  sudo systemctl status mongod  Iniciar mongo db luego de reinicio  sudo systemctl enable mongod  Deteter proceso de mongo db  sudo systemctl stop mongod  Reiniciar proceso de mongo db  sudo systemctl restart mongod  Abrir mongo db  mongo Consultas Mongo db  Mostrar bases de datos  show databases  Mostrar bases de datos (forma 2)  show dbs  Crear base de datos (No se crea hasta que tenga por lo menos un registro)  use &amp;lt;nombre_db&amp;gt; Crear documentos para la base de datos  Crear documento para base de datos (ejemplo Libro), se debe pegar directamente en la terminal.</description>
+    </item>
+    
     <item>
       <title>Google Hacking &amp; Bing Hacking</title>
       <link>https://gohanckz.github.io/cheat-sheet/google-hacking/</link>
@@ -62,6 +71,15 @@ Descarga git clone https://github.com/Gohanckz/rutchile.git Instalación pip ins
       
       <guid>https://gohanckz.github.io/cheat-sheet/router-configuration/</guid>
       <description>ASIGNAR NOMBRE A SWITCH  Activar modo de configuracion de swicth [Modo privilegiado]  enable Habilitar modo de configuracion del swicth  configure terminal Asignar nombre a swicth  hostname nombre_switch Salir de modo configuracion y modo privilegiado  exit exit PROPORCIONAR ACCESO SEGURO A SWITCH  Activar modo de configuracion de swicth [Modo privilegiado]  enable Habilitar modo de configuracion del swicth  configure terminal Entrar al modo config-line  line console 0 Asignar contraseña al swicth  password contraseña_deseada Habilitar login para peticion de contraseña al swicth  login Salir de modo de configuracion y modo privilegiado  exit exit ACCESO SEGURO AL MODO PRIVILEGIADO  Activar modo de configuracion de swicth  enable Habilitar modo de configuracion de swicth [Modo privilegiado]  configure terminal Establecer contraseña para modo privilegiado seguro [solo elegir uno de los dos comandos] -&amp;gt; Enabled secrect = Encriptada  enable password contraseña_deseada enable secret contraseña_deseada Salir de modo privilegiado y/o configuracion  exit PROTEGER ACCESO REMOTO  Activar el modo de configuracion  enable Entrar al modo de configuracion del swicth  configure terminal Entrar al modo de line-vty   line vty 0 15 Asignar ontraseña remota  password contraseña_deseada Habilitar login para peticion de contraseña  login Salir de modo privilegiado y/o configuracion  exit VERIFICAR SI SE AGREGARON LAS CONTRASEÑAS  Mostrar configuracion  show running-config ENCRIPTAR LAS CONTRASEÑAS DE CONSOLA Y ENABLE  Activar modo privilegiado  enable Entrar en modo de configuracion del swicth  confure terminal Encriptar contraseña_deseada  service password-encryption Salir de modo privilegiado y/o configuracion  exit CONFIGURAR AVISO O MENSAJE EN SWITCH  Activar modo privilegiado  enable Entrar en modo configuracion del swicth  configure terminal Agregar mensaje o aviso en swicth  banner motd &amp;quot;Mensaje deseado&amp;quot; Salir de modo de configuracon o privilegiado  exit GUARDAR LOS ARCHIVOS DE CONFIGURACION EN LA NVRAM  Activar modo privilegiado  enable Guardar los archivos en nvram  copy running-config startup-config Confirmar  [ENTER] Salir de modo privilegiado o de configuracion  exit CONFIGURAR DIRECCIÓN IP  Activar modo privilegiado  enable Entrar en modo de configuracion del terminal  configure terminal Entramos al interface vlan 1  interface vlan 1 Asignamos IP junto a su máscara  ip address direccion_ip mascara_correspondiente Mencionamos que no se reinicie el switch  no shutdown </description>
+    </item>
+    
+    <item>
+      <title>Cheat Sheet</title>
+      <link>https://gohanckz.github.io/cheat-sheet/</link>
+      <pubDate>Tue, 06 Oct 2020 18:36:21 -0300</pubDate>
+      
+      <guid>https://gohanckz.github.io/cheat-sheet/</guid>
+      <description>Google Hacking Mongodb Router / Switch configuratiddon</description>
     </item>
     
     <item>
