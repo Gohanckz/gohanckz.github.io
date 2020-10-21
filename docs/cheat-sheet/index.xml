@@ -18,6 +18,17 @@
     </item>
     
     <item>
+      <title>Django</title>
+      <link>https://gohanckz.github.io/cheat-sheet/django/</link>
+      <pubDate>Tue, 20 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gohanckz.github.io/cheat-sheet/django/</guid>
+      <description>Instalar Virtualenv  pip install virtualenv  Crear un entorno virtual  virtualenv &amp;lt;nombre_virtualenv&amp;gt; Ejemplo:
+virtualenv denv  Activar entorno virtual  source bin/activate  Instalar Django en entorno virtual (se debe tener el entorno virtual activado)  pip install Django  Instalar conector para mongo db  python3 -m pip install djongo  Crear proyecto Django  django-admin startproyect &amp;lt;nombre_proyecto&amp;gt; Ejemplo:
+django-admin startproject djangomongo Configurar base de datos mongo db (djongo)  Instalar djongo  python3 -m pip install djongo Dentro del fichero settings.</description>
+    </item>
+    
+    <item>
       <title>Google Hacking &amp; Bing Hacking</title>
       <link>https://gohanckz.github.io/cheat-sheet/google-hacking/</link>
       <pubDate>Thu, 15 Oct 2020 22:48:36 -0300</pubDate>

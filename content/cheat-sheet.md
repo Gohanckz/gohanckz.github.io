@@ -7,3 +7,4 @@ draft: false
 [Google Hacking](google-hacking.md)
 [Mongodb](mongo-db.md)
 [Router / Switch configuratiddon](router-configuration.md)
+[Django](django.md)

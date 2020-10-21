@@ -378,6 +378,13 @@ db.inventory.find(
 ```
 db.inventory.find({status: {$in: ["A","D"]}})
 ```
+
+### Eliminar base de datos
+
+```
+1. use <nombre_db_a_eliminar>
+2. db.dropDatabase()
+```
 ### Desinstalar mongo DB
 
 
