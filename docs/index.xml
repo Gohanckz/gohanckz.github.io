@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 20 Oct 2020 11:07:35 -0300</lastBuildDate><atom:link href="https://gohanckz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Oct 2020 21:29:09 -0300</lastBuildDate><atom:link href="https://gohanckz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Virtualenv</title>
+      <link>https://gohanckz.github.io/cheat-sheet/virtualenv/</link>
+      <pubDate>Wed, 21 Oct 2020 21:29:09 -0300</pubDate>
+      
+      <guid>https://gohanckz.github.io/cheat-sheet/virtualenv/</guid>
+      <description>Instalar virtualenv  pip install virtualenv sudo pip3 install virtualenv  Crear entorno virtual  python2 : virtualenv &amp;lt;nombre_entorno_virtual&amp;gt; python3 : virtualenv &amp;lt;nombre_entorno_virtual&amp;gt; -p python3  Activar entorno virtual  source bin/activate  Desactivar entorno virtual  deactivate  Eliminar entorno virtual  No existe un comando otorgado por virtualenv para poder eliminar un entorno virtual, sin embargo si nos encontramos en Gnu/Linux podemos eliminar el entorno virtual utilizando la siguiente sentencia.</description>
+    </item>
+    
     <item>
       <title>Mongo db</title>
       <link>https://gohanckz.github.io/cheat-sheet/mongo-db/</link>
@@ -23,9 +32,8 @@
       <pubDate>Tue, 20 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://gohanckz.github.io/cheat-sheet/django/</guid>
-      <description>Instalar Virtualenv  pip install virtualenv  Crear un entorno virtual  virtualenv &amp;lt;nombre_virtualenv&amp;gt; Ejemplo:
-virtualenv denv  Activar entorno virtual  source bin/activate  Instalar Django en entorno virtual (se debe tener el entorno virtual activado)  pip install Django  Instalar conector para mongo db  python3 -m pip install djongo  Crear proyecto Django  django-admin startproyect &amp;lt;nombre_proyecto&amp;gt; Ejemplo:
-django-admin startproject djangomongo Configurar base de datos mongo db (djongo)  Instalar djongo  python3 -m pip install djongo Dentro del fichero settings.</description>
+      <description>Instalar Django en entorno virtual (se debe tener el entorno virtual activado)  pip install Django  Instalar conector para mongo db  python3 -m pip install djongo  Crear proyecto Django  django-admin startproyect &amp;lt;nombre_proyecto&amp;gt; Ejemplo:
+django-admin startproject djangomongo Configurar base de datos mongo db (djongo)  Instalar djongo  python3 -m pip install djongo Dentro del fichero settings.py de tu proyecto, agregar:  DATABASES = { &#39;default&#39;: { &#39;ENGINE&#39;: &#39;&amp;lt;conector_db&amp;gt;&#39;, &#39;NAME&#39;: &#39;&amp;lt;nombre_db&amp;gt;&#39;, } } Ejemplo:</description>
     </item>
     
     <item>
@@ -90,7 +98,7 @@ Descarga git clone https://github.com/Gohanckz/rutchile.git Instalación pip ins
       <pubDate>Tue, 06 Oct 2020 18:36:21 -0300</pubDate>
       
       <guid>https://gohanckz.github.io/cheat-sheet/</guid>
-      <description>Google Hacking Mongodb Router / Switch configuratiddon Django</description>
+      <description>Google Hacking Mongodb Router / Switch configuratiddon Django Virtual Environment</description>
     </item>
     
     <item>

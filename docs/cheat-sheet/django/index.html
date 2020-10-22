@@ -5,9 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="author" content="">
-<meta name="description" content="Instalar Virtualenv  pip install virtualenv  Crear un entorno virtual  virtualenv &amp;lt;nombre_virtualenv&amp;gt; Ejemplo:
-virtualenv denv  Activar entorno virtual  source bin/activate  Instalar Django en entorno virtual (se debe tener el entorno virtual activado)  pip install Django  Instalar conector para mongo db  python3 -m pip install djongo  Crear proyecto Django  django-admin startproyect &amp;lt;nombre_proyecto&amp;gt; Ejemplo:
-django-admin startproject djangomongo Configurar base de datos mongo db (djongo)  Instalar djongo  python3 -m pip install djongo Dentro del fichero settings." />
+<meta name="description" content="Instalar Django en entorno virtual (se debe tener el entorno virtual activado)  pip install Django  Instalar conector para mongo db  python3 -m pip install djongo  Crear proyecto Django  django-admin startproyect &amp;lt;nombre_proyecto&amp;gt; Ejemplo:
+django-admin startproject djangomongo Configurar base de datos mongo db (djongo)  Instalar djongo  python3 -m pip install djongo Dentro del fichero settings.py de tu proyecto, agregar:  DATABASES = { &#39;default&#39;: { &#39;ENGINE&#39;: &#39;&amp;lt;conector_db&amp;gt;&#39;, &#39;NAME&#39;: &#39;&amp;lt;nombre_db&amp;gt;&#39;, } } Ejemplo:" />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="" />
@@ -35,12 +34,11 @@ django-admin startproject djangomongo Configurar base de datos mongo db (djongo)
 
 
 <meta itemprop="name" content="Django">
-<meta itemprop="description" content="Instalar Virtualenv  pip install virtualenv  Crear un entorno virtual  virtualenv &lt;nombre_virtualenv&gt; Ejemplo:
-virtualenv denv  Activar entorno virtual  source bin/activate  Instalar Django en entorno virtual (se debe tener el entorno virtual activado)  pip install Django  Instalar conector para mongo db  python3 -m pip install djongo  Crear proyecto Django  django-admin startproyect &lt;nombre_proyecto&gt; Ejemplo:
-django-admin startproject djangomongo Configurar base de datos mongo db (djongo)  Instalar djongo  python3 -m pip install djongo Dentro del fichero settings.">
+<meta itemprop="description" content="Instalar Django en entorno virtual (se debe tener el entorno virtual activado)  pip install Django  Instalar conector para mongo db  python3 -m pip install djongo  Crear proyecto Django  django-admin startproyect &lt;nombre_proyecto&gt; Ejemplo:
+django-admin startproject djangomongo Configurar base de datos mongo db (djongo)  Instalar djongo  python3 -m pip install djongo Dentro del fichero settings.py de tu proyecto, agregar:  DATABASES = { &#39;default&#39;: { &#39;ENGINE&#39;: &#39;&lt;conector_db&gt;&#39;, &#39;NAME&#39;: &#39;&lt;nombre_db&gt;&#39;, } } Ejemplo:">
 <meta itemprop="datePublished" content="2020-10-20T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2020-10-20T00:00:00+00:00" />
-<meta itemprop="wordCount" content="287">
+<meta itemprop="wordCount" content="268">
 <meta itemprop="image" content="https://gohanckz.github.io/"/>
 
 
@@ -51,16 +49,14 @@ django-admin startproject djangomongo Configurar base de datos mongo db (djongo)
 <meta name="twitter:image" content="https://gohanckz.github.io/"/>
 
 <meta name="twitter:title" content="Django"/>
-<meta name="twitter:description" content="Instalar Virtualenv  pip install virtualenv  Crear un entorno virtual  virtualenv &lt;nombre_virtualenv&gt; Ejemplo:
-virtualenv denv  Activar entorno virtual  source bin/activate  Instalar Django en entorno virtual (se debe tener el entorno virtual activado)  pip install Django  Instalar conector para mongo db  python3 -m pip install djongo  Crear proyecto Django  django-admin startproyect &lt;nombre_proyecto&gt; Ejemplo:
-django-admin startproject djangomongo Configurar base de datos mongo db (djongo)  Instalar djongo  python3 -m pip install djongo Dentro del fichero settings."/>
+<meta name="twitter:description" content="Instalar Django en entorno virtual (se debe tener el entorno virtual activado)  pip install Django  Instalar conector para mongo db  python3 -m pip install djongo  Crear proyecto Django  django-admin startproyect &lt;nombre_proyecto&gt; Ejemplo:
+django-admin startproject djangomongo Configurar base de datos mongo db (djongo)  Instalar djongo  python3 -m pip install djongo Dentro del fichero settings.py de tu proyecto, agregar:  DATABASES = { &#39;default&#39;: { &#39;ENGINE&#39;: &#39;&lt;conector_db&gt;&#39;, &#39;NAME&#39;: &#39;&lt;nombre_db&gt;&#39;, } } Ejemplo:"/>
 
 
 
     <meta property="og:title" content="Django" />
-<meta property="og:description" content="Instalar Virtualenv  pip install virtualenv  Crear un entorno virtual  virtualenv &lt;nombre_virtualenv&gt; Ejemplo:
-virtualenv denv  Activar entorno virtual  source bin/activate  Instalar Django en entorno virtual (se debe tener el entorno virtual activado)  pip install Django  Instalar conector para mongo db  python3 -m pip install djongo  Crear proyecto Django  django-admin startproyect &lt;nombre_proyecto&gt; Ejemplo:
-django-admin startproject djangomongo Configurar base de datos mongo db (djongo)  Instalar djongo  python3 -m pip install djongo Dentro del fichero settings." />
+<meta property="og:description" content="Instalar Django en entorno virtual (se debe tener el entorno virtual activado)  pip install Django  Instalar conector para mongo db  python3 -m pip install djongo  Crear proyecto Django  django-admin startproyect &lt;nombre_proyecto&gt; Ejemplo:
+django-admin startproject djangomongo Configurar base de datos mongo db (djongo)  Instalar djongo  python3 -m pip install djongo Dentro del fichero settings.py de tu proyecto, agregar:  DATABASES = { &#39;default&#39;: { &#39;ENGINE&#39;: &#39;&lt;conector_db&gt;&#39;, &#39;NAME&#39;: &#39;&lt;nombre_db&gt;&#39;, } } Ejemplo:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://gohanckz.github.io/cheat-sheet/django/" />
 <meta property="og:image" content="https://gohanckz.github.io/"/>
@@ -146,20 +142,6 @@ django-admin startproject djangomongo Configurar base de datos mongo db (djongo)
 
             <div class="post-content">
                 <ul>
-<li>Instalar Virtualenv</li>
-</ul>
-<pre><code>pip install virtualenv
-</code></pre><ul>
-<li>Crear un entorno virtual</li>
-</ul>
-<pre><code>virtualenv &lt;nombre_virtualenv&gt;
-</code></pre><p>Ejemplo:</p>
-<pre><code>virtualenv denv
-</code></pre><ul>
-<li>Activar entorno virtual</li>
-</ul>
-<pre><code>source bin/activate
-</code></pre><ul>
 <li>Instalar Django en entorno virtual (se debe tener el entorno virtual activado)</li>
 </ul>
 <pre><code>pip install Django
