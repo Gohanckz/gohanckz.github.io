@@ -3,12 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://gohanckz.github.io/cheat-sheet/</loc>
-    <lastmod>2020-10-21T21:29:09-03:00</lastmod>
+    <loc>https://gohanckz.github.io/tools/burpsuite/</loc>
+    <lastmod>2020-10-21T23:49:08-03:00</lastmod>
   </url>
   
   <url>
     <loc>https://gohanckz.github.io/</loc>
+    <lastmod>2020-10-21T23:49:08-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gohanckz.github.io/tools/</loc>
+    <lastmod>2020-10-21T23:49:08-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://gohanckz.github.io/cheat-sheet/</loc>
     <lastmod>2020-10-21T21:29:09-03:00</lastmod>
   </url>
   
@@ -34,11 +44,6 @@
   
   <url>
     <loc>https://gohanckz.github.io/tools/rutchile/</loc>
-    <lastmod>2020-10-07T22:46:29-03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://gohanckz.github.io/tools/</loc>
     <lastmod>2020-10-07T22:46:29-03:00</lastmod>
   </url>
   

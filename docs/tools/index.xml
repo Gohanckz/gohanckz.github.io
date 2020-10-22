@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 07 Oct 2020 22:46:29 -0300</lastBuildDate><atom:link href="https://gohanckz.github.io/tools/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Oct 2020 23:49:08 -0300</lastBuildDate><atom:link href="https://gohanckz.github.io/tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Burpsuite</title>
+      <link>https://gohanckz.github.io/tools/burpsuite/</link>
+      <pubDate>Wed, 21 Oct 2020 23:49:08 -0300</pubDate>
+      
+      <guid>https://gohanckz.github.io/tools/burpsuite/</guid>
+      <description>Burp Suite ofrece una amplia gama de utilidades cuando realizamos pentesting de aplicaciones web. Aquí hay una descripción general rápida.
+   Componente Descripción     Proxy permite canalizar el tráfico a través de Burp Suite para un análisis más detallado.   Target cómo establecemos el alcance de nuestro proyecto. También podemos usar esto para crear de manera efectiva un sitemap de la aplicación que estamos probando.</description>
+    </item>
+    
     <item>
       <title>Generador de Ruts chilenos</title>
       <link>https://gohanckz.github.io/tools/rutchile/</link>
