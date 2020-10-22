@@ -4,28 +4,6 @@ date: 2020-10-20
 draft: false
 ---
 
-* Instalar Virtualenv
-
-```
-pip install virtualenv
-```
-
-* Crear un entorno virtual
-
-```
-virtualenv <nombre_virtualenv>
-```
-Ejemplo:
-
-```
-virtualenv denv
-```
-
-* Activar entorno virtual
-```
-source bin/activate
-```
-
 * Instalar Django en entorno virtual (se debe tener el entorno virtual activado)
 ```
 pip install Django
