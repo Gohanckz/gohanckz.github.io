@@ -23,3 +23,14 @@ Para cambiar Burpsuite al modo oscuro debemos seguir la siguiente ruta para sele
 ```
 User otions > Display > Look and fell : Darcula.
 ```
+
+#### Intruder - Tipos de ataque
+
+1. **Sniper** : El tipo de ataque más popular, recorre nuestras posiciones seleccionadas, colocando la siguiente payload disponible (elemento de nuestro diccionario) en cada posición por turno. Esto usa solo un conjunto de payloads (solo un diccionario).
+
+2. **Battering ram** : Similar al Sniper, Battering Ram utiliza solo un conjunto de payloads. A diferencia de Sniper, Battering Ram pone cada payload en cada posición seleccionada. Piense en cómo un ariete hace contacto a través de una gran superficie con una sola superficie, de ahí el nombre ariete para este tipo de ataque.
+
+3. **Pitchfork** :  El tipo de ataque Pitchfork nos permite usar varios conjuntos de payloads (uno por posición seleccionada) e iterar a través de ambos conjuntos de payload  simultáneamente . Por ejemplo, si seleccionamos dos posiciones (digamos un campo de nombre de usuario y un campo de contraseña), podemos proporcionar una lista de payload de nombre de usuario y contraseña. Intruder luego recorrerá las combinaciones de nombres de usuario y contraseñas, lo que dará como resultado un número total de combinaciones que igualará el conjunto de payload más pequeño proporcionado. 
+
+4. **Cluster bomb** : el tipo de ataque Cluster bomb nos permite usar varios conjuntos de payloads (uno por posición seleccionada)  e iterar a través de todas las combinaciones de las listas de payloads que proporcionamos. Por ejemplo, si seleccionamos dos posiciones (digamos un campo de nombre de usuario y un campo de contraseña), podemos proporcionar una lista de payloads de nombre de usuario y contraseña. Intruder luego recorrerá las combinaciones de nombres de usuario y contraseñas, lo que dará como resultado un número total de combinaciones que igualarán los nombres de usuario x contraseñas. Tenga en cuenta que esto puede ser bastante largo si está utilizando la edición comunitaria de Burp.   
+
