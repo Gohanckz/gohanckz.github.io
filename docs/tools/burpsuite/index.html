@@ -38,7 +38,7 @@
    Componente Descripción     Proxy permite canalizar el tráfico a través de Burp Suite para un análisis más detallado.   Target cómo establecemos el alcance de nuestro proyecto. También podemos usar esto para crear de manera efectiva un sitemap de la aplicación que estamos probando.">
 <meta itemprop="datePublished" content="2020-10-21T23:49:08-03:00" />
 <meta itemprop="dateModified" content="2020-10-21T23:49:08-03:00" />
-<meta itemprop="wordCount" content="321">
+<meta itemprop="wordCount" content="616">
 <meta itemprop="image" content="https://gohanckz.github.io/"/>
 
 
@@ -191,7 +191,22 @@
 <h4 id="cambiar-modo-oscuro">Cambiar modo oscuro</h4>
 <p>Para cambiar Burpsuite al modo oscuro debemos seguir la siguiente ruta para seleccionar el tema de interés.</p>
 <pre><code>User otions &gt; Display &gt; Look and fell : Darcula.
-</code></pre>
+</code></pre><h4 id="intruder---tipos-de-ataque">Intruder - Tipos de ataque</h4>
+<ol>
+<li>
+<p><strong>Sniper</strong> : El tipo de ataque más popular, recorre nuestras posiciones seleccionadas, colocando la siguiente payload disponible (elemento de nuestro diccionario) en cada posición por turno. Esto usa solo un conjunto de payloads (solo un diccionario).</p>
+</li>
+<li>
+<p><strong>Battering ram</strong> : Similar al Sniper, Battering Ram utiliza solo un conjunto de payloads. A diferencia de Sniper, Battering Ram pone cada payload en cada posición seleccionada. Piense en cómo un ariete hace contacto a través de una gran superficie con una sola superficie, de ahí el nombre ariete para este tipo de ataque.</p>
+</li>
+<li>
+<p><strong>Pitchfork</strong> :  El tipo de ataque Pitchfork nos permite usar varios conjuntos de payloads (uno por posición seleccionada) e iterar a través de ambos conjuntos de payload  simultáneamente . Por ejemplo, si seleccionamos dos posiciones (digamos un campo de nombre de usuario y un campo de contraseña), podemos proporcionar una lista de payload de nombre de usuario y contraseña. Intruder luego recorrerá las combinaciones de nombres de usuario y contraseñas, lo que dará como resultado un número total de combinaciones que igualará el conjunto de payload más pequeño proporcionado.</p>
+</li>
+<li>
+<p><strong>Cluster bomb</strong> : el tipo de ataque Cluster bomb nos permite usar varios conjuntos de payloads (uno por posición seleccionada)  e iterar a través de todas las combinaciones de las listas de payloads que proporcionamos. Por ejemplo, si seleccionamos dos posiciones (digamos un campo de nombre de usuario y un campo de contraseña), podemos proporcionar una lista de payloads de nombre de usuario y contraseña. Intruder luego recorrerá las combinaciones de nombres de usuario y contraseñas, lo que dará como resultado un número total de combinaciones que igualarán los nombres de usuario x contraseñas. Tenga en cuenta que esto puede ser bastante largo si está utilizando la edición comunitaria de Burp.</p>
+</li>
+</ol>
+
             </div>
         </article>
 
