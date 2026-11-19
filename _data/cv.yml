@@ -52,6 +52,9 @@ basics:
     - name: HackerOne
       url: https://hackerone.com/gohanckz
       icon: fa-solid fa-bug
+    - name: YouTube
+      url: https://www.youtube.com/@gohanckz
+      icon: fa-brands fa-youtube
 
 experience:
   - role: Security Researcher
@@ -137,6 +140,16 @@ projects:
     url: https://console.oob.synckz.com
     description: Collaborator para procesos de pentesting, bug bounty y validación de vulnerabilidades.
     tags: [Out-of-band, Validación]
+    featured: true
+  - name: bugbounty.cl
+    url: https://bugbounty.cl
+    description: Sitio oficial de la selección chilena de Bug Bounty (Team Chile), con ranking de hunters sincronizado automáticamente desde HackerOne.
+    tags: [Comunidad, HackerOne]
+    featured: true
+  - name: YouTube
+    url: https://www.youtube.com/@gohanckz
+    description: Canal con contenido de hacking y bug bounty — técnicas, vulnerabilidades y casos reales explicados.
+    tags: [Contenido, Bug Bounty]
     featured: true
   - name: Open Osint
     description: Plataforma de OSINT colaborativo.
