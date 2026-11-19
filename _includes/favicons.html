@@ -1,0 +1,12 @@
+{%- comment -%}
+  Favicons propios (ojo pixelado). Sustituye al include de Chirpy.
+  Dibujado en una rejilla de 16x16: favicon.svg es el original y los PNG/ICO son copias escaladas.
+{%- endcomment -%}
+{%- capture favicon_path %}{{ '/assets/img/favicons' | relative_url }}{% endcapture -%}
+<link rel="icon" href="{{ favicon_path }}/favicon.svg" type="image/svg+xml">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ favicon_path }}/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ favicon_path }}/favicon-16x16.png">
+<link rel="shortcut icon" href="{{ favicon_path }}/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ favicon_path }}/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="Gohanckz">
+<meta name="application-name" content="Gohanckz">

@@ -79,7 +79,7 @@ avatar: /assets/profile.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
-social_preview_image: # string, local or CORS resources
+social_preview_image: /assets/img/og-image.png
 
 # boolean type, the global switch for TOC in posts.
 toc: true
@@ -140,6 +140,12 @@ collections:
     sort_by: order
 
 defaults:
+  # Imagen de vista previa (og:image / twitter:image) para todo el sitio.
+  # Un post con su propio `image:` en el front matter la sustituye.
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/og-image.png
   - scope:
       path: "" # An empty string here means all files in the project
       type: posts

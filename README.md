@@ -40,6 +40,8 @@ Todo el sitio (portada, CV y blog) usa un diseño propio; del tema Chirpy solo s
 - `_layouts/default.html`: estructura común (navegación, footer, cursor).
 - `_layouts/home.html`, `post.html`, `categories.html`, `category.html`, `tags.html`, `tag.html`, `archives.html`, `page.html`: blog.
 - `assets/css/site.css`: estilos (tokens de color en `:root`, estilos de impresión del CV al final).
+- `_includes/favicons.html` y `assets/img/favicons/`: favicon del ojo pixelado (SVG + PNG/ICO).
+- `assets/img/og-image.png`: imagen de vista previa al compartir el enlace (1200×630), definida en `defaults` de `_config.yml`.
 - `assets/js/site.js`: ojo ASCII animado, cursor de selección, texto que se descifra, buscador del blog, índice y botón de copiar en los posts.
 
 ## Licencia
