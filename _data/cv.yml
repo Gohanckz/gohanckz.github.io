@@ -141,6 +141,11 @@ projects:
     description: Collaborator para procesos de pentesting, bug bounty y validación de vulnerabilidades.
     tags: [Out-of-band, Validación]
     featured: true
+  - name: Hydra
+    url: https://hydra.synckz.com
+    description: Plataforma antipiratería que monitorea de forma continua dominios y aplicaciones que distribuyen señal ilegal, verifica el bloqueo operador por operador y genera expedientes para el regulador.
+    tags: [Antipiratería, IPTV, Monitoreo]
+    featured: true
   - name: bugbounty.cl
     url: https://bugbounty.cl
     description: Sitio oficial de la selección chilena de Bug Bounty (Team Chile), con ranking de hunters sincronizado automáticamente desde HackerOne.
