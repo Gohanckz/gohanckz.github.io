@@ -82,7 +82,7 @@ body_class: page-home
     </div>
     <div class="jobs">
       {%- for job in cv.experience %}
-      <details class="job"{% if forloop.first %} open{% endif %}>
+      <details class="job{% if job.end == 'Presente' %} job--current{% endif %}"{% if forloop.first %} open{% endif %}>
         <summary>
           <span class="job__years">{{ job.start }}–{{ job.end | replace: 'Presente', 'Hoy' }}</span>
           <span class="job__role">{{ job.role }}</span>

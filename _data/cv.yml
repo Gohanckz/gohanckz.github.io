@@ -9,6 +9,9 @@
 #   • Nueva certificación → añade una línea en `certifications:`.
 #   • Nuevo proyecto → añade un bloque en `projects:` (featured: true lo destaca).
 #
+#  Trabajo actual → `end: Presente` (se resalta en verde en la portada).
+#  Al dejarlo, cambia `end` por el año de salida, entre comillas: "2026".
+#
 #  Campos opcionales: si no los necesitas, bórralos (no dejes la clave vacía).
 # ─────────────────────────────────────────────────────────────────────────────
 
@@ -60,7 +63,7 @@ experience:
   - role: Security Researcher
     company: Claro Chile
     start: "2025"
-    end: Presente
+    end: "2026"
     highlights:
       - Ethical Hacking sobre aplicaciones web y móviles Android/iOS.
       - Investigación de técnicas de piratería en servicios IPTV (reestreaming, apps modificadas, abuso de credenciales), identificando más de 3000 fuentes ilegales a la fecha.
