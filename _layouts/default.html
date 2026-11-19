@@ -1,0 +1,68 @@
+<!doctype html>
+{%- assign cv = site.data.cv -%}
+{%- assign url = page.url -%}
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    {% seo %}
+    {% include favicons.html %}
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  </head>
+  <body class="{{ page.body_class | default: 'page-generic' }}">
+    <a class="skip" href="#main">Saltar al contenido</a>
+
+    <header class="nav">
+      <div class="wrap nav__inner">
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="Inicio">
+          <span class="brand__mark" aria-hidden="true"></span><span class="px">{{ cv.basics.alias | upcase }}</span>
+        </a>
+        <span class="nav__status mono" aria-hidden="true"><span class="blink">●</span> SANTIAGO, CL · <span data-clock>--:--</span></span>
+        <input type="checkbox" id="nav-toggle" class="nav__toggle" aria-label="Abrir menú">
+        <label for="nav-toggle" class="nav__burger" aria-hidden="true"><span class="mono">MENU</span><i></i></label>
+        <nav class="nav__links" aria-label="Principal">
+          {%- assign home = '/' | relative_url -%}
+          <a href="{{ home }}#experiencia" data-scramble>Experiencia</a>
+          <a href="{{ home }}#proyectos" data-scramble>Proyectos</a>
+          <a href="{{ '/blog/' | relative_url }}" data-scramble {% if page.layout == 'home' or page.layout == 'post' or page.layout == 'category' or page.layout == 'tag' or page.layout == 'categories' or page.layout == 'tags' or page.layout == 'archives' %}aria-current="page"{% endif %}>Blog</a>
+          <a href="{{ '/cv/' | relative_url }}" data-scramble {% if url == '/cv/' %}aria-current="page"{% endif %}>CV</a>
+          <a class="nav__cta" href="{{ home }}#contacto">Contacto <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      {{ content }}
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer__inner">
+        <ul class="footer__links mono">
+          <li><a href="{{ '/' | relative_url }}">Portfolio</a></li>
+          <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+          <li><a href="{{ '/cv/' | relative_url }}">CV</a></li>
+          <li><a href="{{ '/feed.xml' | relative_url }}">RSS</a></li>
+        </ul>
+        <p class="mono footer__copy">© {{ 'now' | date: '%Y' }} {{ cv.basics.name | upcase }} — {{ cv.basics.alias | upcase }}</p>
+        <ul class="footer__links mono">
+          {%- for l in cv.basics.links %}
+          <li><a href="{{ l.url }}" target="_blank" rel="noopener noreferrer">{{ l.name }}</a></li>
+          {%- endfor %}
+        </ul>
+      </div>
+    </footer>
+
+    <div class="cursor" aria-hidden="true">
+      <div class="cursor__box"><i></i><i></i><i></i><i></i><span class="cursor__label mono"></span></div>
+      <div class="cursor__dot"></div>
+    </div>
+
+    <script src="{{ '/assets/js/site.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+  </body>
+</html>

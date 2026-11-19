@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{%- if page.url == '/404.html' -%}
+<div class="wrap e404">
+<pre aria-hidden="true">
+ _  _    ___  _  _
+| || |  / _ \| || |
+| || |_| | | | || |_
+|__   _| |_| |__   _|
+   |_|  \___/   |_|
+</pre>
+  <p class="mono">// recurso no encontrado. Puede que la ruta haya cambiado.</p>
+  <a class="btn" href="{{ '/' | relative_url }}">Volver al inicio <span class="arr">↗</span></a>
+</div>
+{%- else -%}
+<div class="wrap">
+  <header class="blog-head">
+    <h1>{{ page.title }}</h1>
+  </header>
+  <div class="prose" style="max-width:760px;padding-bottom:112px">{{ content }}</div>
+</div>
+{%- endif -%}

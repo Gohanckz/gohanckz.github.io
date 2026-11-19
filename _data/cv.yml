@@ -1,0 +1,182 @@
+# ─────────────────────────────────────────────────────────────────────────────
+#  CV / Portfolio — fuente única de datos
+#
+#  Todo lo que aparece en la portada (/) y en la página del CV (/cv/) sale de
+#  este archivo. Para actualizar tu CV solo edita aquí:
+#
+#   • Nueva experiencia → copia un bloque de `experience:` y pégalo ARRIBA
+#     (el orden del archivo es el orden en que se muestra).
+#   • Nueva certificación → añade una línea en `certifications:`.
+#   • Nuevo proyecto → añade un bloque en `projects:` (featured: true lo destaca).
+#
+#  Campos opcionales: si no los necesitas, bórralos (no dejes la clave vacía).
+# ─────────────────────────────────────────────────────────────────────────────
+
+basics:
+  name: Iván González Olivares
+  alias: Gohanckz
+  title: Offensive Security Engineer
+  subtitle: Security Researcher · Bug Bounty Hunter
+  location: Santiago, Chile
+  email: ing.ivan.rodrigo@gmail.com
+  # phone: "+56 9 XXXX XXXX"   # descomenta solo si quieres publicarlo en la web
+  avatar: /assets/profile.jpg
+  summary: >-
+    Offensive Security Engineer y Security Researcher con más de 7 años de
+    experiencia en Ethical Hacking y Red Team para los sectores bancario,
+    telecomunicaciones y empresarial. Especializado en hacking de aplicaciones
+    web, móviles y APIs, investigación de amenazas (piratería IPTV y
+    aplicaciones maliciosas) y automatización ofensiva con agentes de IA.
+    Bug bounty hunter en HackerOne, miembro de la selección chilena de Bug
+    Bounty (Team Chile) y speaker.
+  # Frase corta para la portada
+  headline: >-
+    Rompo aplicaciones web, móviles y APIs antes de que lo haga otro — y
+    construyo agentes de IA que automatizan el trabajo ofensivo.
+  stats:
+    - value: "7+"
+      label: años en seguridad ofensiva
+    - value: "100+"
+      label: proyectos de pentesting
+    - value: "3000+"
+      label: fuentes piratas identificadas
+    - value: "5"
+      label: certificaciones
+  links:
+    - name: LinkedIn
+      url: https://www.linkedin.com/in/gohanckz
+      icon: fa-brands fa-linkedin
+    - name: GitHub
+      url: https://github.com/gohanckz
+      icon: fa-brands fa-github
+    - name: HackerOne
+      url: https://hackerone.com/gohanckz
+      icon: fa-solid fa-bug
+
+experience:
+  - role: Security Researcher
+    company: Claro Chile
+    start: "2025"
+    end: Presente
+    highlights:
+      - Ethical Hacking sobre aplicaciones web y móviles Android/iOS.
+      - Investigación de técnicas de piratería en servicios IPTV (reestreaming, apps modificadas, abuso de credenciales), identificando más de 3000 fuentes ilegales a la fecha.
+      - Diseño y desarrollo de una plataforma antipiratería que monitorea, detecta y mantiene servicios piratas fuera de funcionamiento de forma continua.
+      - Automatización de la detección de aplicaciones maliciosas mediante análisis estático y dinámico (jadx, Frida, MobSF).
+      - Desarrollo de agentes de IA para seguridad ofensiva que automatizan el reconocimiento y la validación de vulnerabilidades.
+    tags: [Mobile, IPTV, Threat Research, Agentes IA]
+
+  - role: Offensive Security Engineer
+    company: Banco Ripley
+    start: "2022"
+    end: "2025"
+    highlights:
+      - Ethical Hacking sobre aplicaciones web y móviles del sector bancario.
+      - Ejecución de ejercicios de Red Team.
+      - Dictado de charlas y capacitaciones de ciberseguridad a colaboradores y al equipo interno.
+    tags: [Banca, Red Team, Web, Mobile]
+
+  - role: Offensive Security Engineer
+    company: NeoSecure
+    start: "2020"
+    end: "2022"
+    highlights:
+      - 100+ proyectos de pentesting externo e interno sobre infraestructura corporativa y redes inalámbricas para clientes de banca, retail y gobierno.
+      - Ethical Hacking de aplicaciones web y móviles, y testing de seguridad sobre APIs.
+      - Proyectos de Red Team, incluyendo intrusión física.
+      - Diseño y ejecución de campañas de phishing ético.
+    tags: [Pentesting, APIs, Red Team, Phishing]
+
+  - role: Ethical Hacker
+    company: Inside Security
+    start: "2019"
+    end: "2020"
+    highlights:
+      - Ethical hacking de aplicaciones web y móviles para clientes corporativos.
+    tags: [Web, Mobile]
+
+research:
+  - title: HackerOne
+    detail: Bug bounty hunter activo desde 2025.
+    url: https://hackerone.com/gohanckz
+  - title: Team Chile
+    detail: Miembro de la selección chilena de Bug Bounty.
+  - title: bugbounty.cl
+    detail: Desarrollo y operación del sitio oficial de la selección chilena de Bug Bounty, con ranking de hunters sincronizado automáticamente desde HackerOne.
+    url: https://bugbounty.cl
+
+certifications:
+  - short: CBBH
+    name: Certified Bug Bounty Hunter
+    issuer: Hack The Box
+  - short: CWES
+    name: Certified Web Exploitation Specialist
+    issuer: Hack The Box
+  - short: eWPTX
+    name: Web Application Penetration Tester eXtreme
+    issuer: eLearnSecurity / INE
+  - short: eWPT
+    name: Web Application Penetration Tester
+    issuer: eLearnSecurity / INE
+  - short: eJPT
+    name: Junior Penetration Tester
+    issuer: eLearnSecurity / INE
+
+projects:
+  - name: Synckz
+    url: https://synckz.com
+    description: Sistema de agentes autónomos ofensivos para hackers y bug bounty hunters.
+    tags: [Agentes IA, Bug Bounty]
+    featured: true
+  - name: DeepMaw
+    url: https://deepmaw.com
+    description: Administración de proyectos de bug bounty y pentesting, controlada vía MCP por agentes ofensivos.
+    tags: [MCP, Gestión]
+    featured: true
+  - name: OOB
+    url: https://console.oob.synckz.com
+    description: Collaborator para procesos de pentesting, bug bounty y validación de vulnerabilidades.
+    tags: [Out-of-band, Validación]
+    featured: true
+  - name: Open Osint
+    description: Plataforma de OSINT colaborativo.
+    tags: [OSINT]
+
+tools:
+  - name: Guillotine
+    description: Detección de cabeceras de seguridad HTTP.
+    url: https://github.com/Gohanckz/guillotine
+  - name: Open2URL
+    description: Detección de open redirects.
+    url: https://github.com/gohanckz
+  - name: BadHash
+    description: Fuerza bruta inversa de contraseñas.
+    url: https://github.com/Gohanckz/badhash
+  - name: CookieSpam
+    description: Pruebas de robo de sesión.
+    url: https://github.com/Gohanckz/CookieSpam
+  - name: jsdump
+    description: Extracción de JavaScript.
+    url: https://github.com/Gohanckz/jsdump
+
+skills:
+  - group: Seguridad ofensiva
+    items: [Web Hacking, Pentesting de APIs, Hacking Mobile, Red Team, Bug Bounty, Ingeniería social y phishing ético, Redes inalámbricas, Intrusión física]
+  - group: Herramientas
+    items: [Burp Suite, Caido, Frida, Objection, jadx, apktool, MobSF, Nuclei, ffuf, Nmap, Metasploit]
+  - group: Lenguajes y tecnologías
+    items: [Python, Bash, JavaScript, Django, GNU/Linux, Agentes ofensivos con IA]
+  - group: Otras
+    items: [Liderazgo de equipos, Speaking técnico]
+
+languages:
+  - name: Español
+    level: Nativo
+  - name: Inglés
+    level: A2
+
+education:
+  - degree: Ingeniería en Informática
+    school: Universidad Tecnológica de Chile — INACAP
+    start: "2017"
+    end: "2020"

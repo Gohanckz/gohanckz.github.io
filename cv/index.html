@@ -1,0 +1,125 @@
+---
+layout: default
+title: CV — Iván González Olivares
+description: Currículum de Iván González Olivares, Offensive Security Engineer y Security Researcher.
+body_class: page-cv
+permalink: /cv/
+redirect_from:
+  - /about/
+---
+{%- assign cv = site.data.cv -%}
+{%- assign b = cv.basics -%}
+
+<div class="wrap cv-top">
+  <div>
+    <p class="label" style="margin-bottom:18px">[CV] · Actualizado {{ site.time | date: '%m.%Y' }}</p>
+    <h1 data-decode>Curriculum</h1>
+  </div>
+  <button type="button" class="btn" onclick="window.print()" data-cursor="Guardar PDF">Descargar PDF <span class="arr">↓</span></button>
+</div>
+
+<div class="wrap cv">
+  <article class="cv__sheet corners">
+    <i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i>
+    <header class="cv__head">
+      <div>
+        <h2>{{ b.name }}</h2>
+        <p class="cv__title">{{ b.title }} · {{ b.subtitle }}</p>
+      </div>
+      <ul class="cv__contact">
+        <li><i class="fa-solid fa-location-dot"></i> {{ b.location }}</li>
+        {%- if b.phone %}<li><i class="fa-solid fa-phone"></i> {{ b.phone }}</li>{% endif %}
+        {%- assign mail = b.email | split: '@' %}
+        <li><i class="fa-solid fa-envelope"></i> <a class="js-mail" href="#" data-u="{{ mail[0] }}" data-d="{{ mail[1] }}">{{ mail[0] }}<span>&#64;</span>{{ mail[1] }}</a></li>
+        {%- for l in b.links %}
+        <li><i class="{{ l.icon }}"></i> <a href="{{ l.url }}" target="_blank" rel="noopener noreferrer">{{ l.url | remove: 'https://' | remove: 'www.' }}</a></li>
+        {%- endfor %}
+      </ul>
+    </header>
+
+    <section class="cv__sec">
+      <h3>Perfil</h3>
+      <div><p>{{ b.summary }}</p></div>
+    </section>
+
+    <section class="cv__sec">
+      <h3>Experiencia</h3>
+      <div>
+        {%- for job in cv.experience %}
+        <div class="cv__entry">
+          <div class="cv__entry-head">
+            <h4>{{ job.role }} <span>· {{ job.company }}</span></h4>
+            <span class="cv__date">{{ job.start }} – {{ job.end }}</span>
+          </div>
+          <ul class="bullets">
+            {%- for h in job.highlights %}
+            <li>{{ h }}</li>
+            {%- endfor %}
+          </ul>
+        </div>
+        {%- endfor %}
+      </div>
+    </section>
+
+    <section class="cv__sec">
+      <h3>Bug bounty e investigación</h3>
+      <div>
+        <ul class="bullets">
+          {%- for r in cv.research %}
+          <li><strong>{{ r.title }}</strong>: {{ r.detail }}</li>
+          {%- endfor %}
+        </ul>
+      </div>
+    </section>
+
+    <section class="cv__sec">
+      <h3>Certificaciones</h3>
+      <div>
+        <ul class="bullets">
+          {%- for c in cv.certifications %}
+          <li><strong>{{ c.short }}</strong> — {{ c.name }} <span class="muted">({{ c.issuer }})</span></li>
+          {%- endfor %}
+        </ul>
+      </div>
+    </section>
+
+    <section class="cv__sec">
+      <h3>Proyectos</h3>
+      <div>
+        <ul class="bullets">
+          {%- for p in cv.projects %}
+          <li><strong>{{ p.name }}</strong>{% if p.url %} <span class="muted">({{ p.url | remove: 'https://' }})</span>{% endif %}: {{ p.description }}</li>
+          {%- endfor %}
+          <li><strong>Herramientas open source</strong> <span class="muted">(github.com/gohanckz)</span>:
+            {% for t in cv.tools %}{{ t.name }} ({{ t.description | downcase | remove: '.' }}){% unless forloop.last %}, {% endunless %}{% endfor %}.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cv__sec">
+      <h3>Habilidades</h3>
+      <div>
+        <dl class="cv__skills">
+          {%- for g in cv.skills %}
+          <dt>{{ g.group }}</dt>
+          <dd>{{ g.items | join: ', ' }}</dd>
+          {%- endfor %}
+          <dt>Idiomas</dt>
+          <dd>{% for l in cv.languages %}{{ l.name }} {{ l.level | downcase }}{% unless forloop.last %}, {% endunless %}{% endfor %}</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="cv__sec">
+      <h3>Educación</h3>
+      <div>
+        {%- for e in cv.education %}
+        <div class="cv__entry-head">
+          <h4>{{ e.degree }} <span>· {{ e.school }}</span></h4>
+          <span class="cv__date">{{ e.start }} – {{ e.end }}</span>
+        </div>
+        {%- endfor %}
+      </div>
+    </section>
+  </article>
+</div>

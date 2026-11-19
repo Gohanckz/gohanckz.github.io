@@ -1,4 +1,257 @@
 ---
-layout: home
-# Index page
+layout: default
+title: Iván González — Offensive Security Engineer
+description: Offensive Security Engineer y Security Researcher en Santiago de Chile. Ethical Hacking, Red Team, bug bounty y automatización ofensiva con agentes de IA.
+body_class: page-home
 ---
+{%- assign cv = site.data.cv -%}
+{%- assign b = cv.basics -%}
+
+<section class="hero">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="wrap hero__grid">
+    <div class="hero__copy">
+      <div class="hero__meta">
+        <span>{{ b.name }}</span>
+        <span>{{ b.location }}</span>
+      </div>
+      <h1 class="hero__title" aria-label="{{ b.title }}">
+        <span class="l" data-decode>Offensive</span>
+        <span class="l" data-decode>Security</span>
+        <span class="l" data-decode>Engineer</span>
+      </h1>
+      <p class="hero__lead">{{ b.headline }}</p>
+      <div class="hero__actions">
+        <a class="btn" href="{{ '/cv/' | relative_url }}">Ver CV <span class="arr">↗</span></a>
+        <a class="btn btn--ghost" href="{{ '/blog/' | relative_url }}">Writeups <span class="arr">↗</span></a>
+      </div>
+    </div>
+
+    <div class="hero__art corners" data-cursor="Click: glitch">
+      <i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i>
+      <span class="tag tag--tl">Recon</span><span class="tag tag--tr">Watching</span>
+      <span class="tag tag--bl">{{ b.alias }}.exe</span><span class="tag tag--br">● Live</span>
+      <span class="sq sq--t" aria-hidden="true"></span>
+      <canvas id="ascii-eye" role="img" aria-label="Ojo en arte ASCII animado que sigue al cursor"></canvas>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <ul class="stats">
+      {%- for s in b.stats %}
+      <li><strong>{{ s.value }}</strong><span>{{ s.label }}</span></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="perfil">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-head__idx">[01]</span>
+      <h2>Perfil</h2>
+      <span class="sec-head__aside label">whoami</span>
+    </div>
+    <div class="about">
+      <figure class="about__photo corners" style="margin:0">
+        <i class="c"></i><i class="c"></i><i class="c"></i><i class="c"></i>
+        <img src="{{ b.avatar | relative_url }}" alt="Retrato de {{ b.name }}" width="320" height="320" loading="lazy">
+        <figcaption class="label">IMG_001 · {{ b.alias | upcase }}</figcaption>
+      </figure>
+      <div class="about__text">
+        {%- assign parts = b.summary | split: '. ' -%}
+        <p><span class="hl">{{ parts.first }}.</span> {% for p in parts offset: 1 %}{{ p }}{% unless forloop.last %}. {% endunless %}{% endfor %}</p>
+        <dl class="about__facts">
+          <div><dt class="label">Ubicación</dt><dd>{{ b.location }}</dd></div>
+          <div><dt class="label">Idiomas</dt><dd>{% for l in cv.languages %}{{ l.name }} ({{ l.level }}){% unless forloop.last %} · {% endunless %}{% endfor %}</dd></div>
+          {%- assign edu = cv.education.first %}
+          <div><dt class="label">Formación</dt><dd>{{ edu.degree }} — {{ edu.school | split: ' — ' | last }}</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="experiencia">
+  <span class="vlabel" aria-hidden="true">Experiencia</span>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-head__idx">[02]</span>
+      <h2>Trayectoria</h2>
+      <a class="ulink sec-head__aside" href="{{ '/cv/' | relative_url }}">CV completo ↗</a>
+    </div>
+    <div class="jobs">
+      {%- for job in cv.experience %}
+      <details class="job"{% if forloop.first %} open{% endif %}>
+        <summary>
+          <span class="job__years">{{ job.start }}–{{ job.end | replace: 'Presente', 'Hoy' }}</span>
+          <span class="job__role">{{ job.role }}</span>
+          <span class="job__co">{{ job.company }}</span>
+          <span class="job__toggle" aria-hidden="true">+</span>
+        </summary>
+        <div class="job__body">
+          <ul class="bullets">
+            {%- for h in job.highlights %}
+            <li>{{ h }}</li>
+            {%- endfor %}
+          </ul>
+          {%- if job.tags %}
+          <ul class="chips">{% for t in job.tags %}<li>{{ t }}</li>{% endfor %}</ul>
+          {%- endif %}
+        </div>
+      </details>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="proyectos">
+  <span class="vlabel" aria-hidden="true">Proyectos</span>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-head__idx">[03]</span>
+      <h2>Lo que construyo</h2>
+      <span class="sec-head__aside label">{{ cv.projects.size }} proyectos · {{ cv.tools.size }} tools</span>
+    </div>
+    <div class="wins">
+      {%- for p in cv.projects %}
+      {%- capture inner -%}
+        <div class="win__bar"><span>{{ p.name | upcase | replace: ' ', '_' }}.EXE</span><span class="win__btns" aria-hidden="true"><i></i><i></i><i></i></span></div>
+        <div class="win__body">
+          <h3>{{ p.name }}</h3>
+          <p>{{ p.description }}</p>
+          <div class="win__foot">
+            {%- if p.tags %}<ul class="chips">{% for t in p.tags %}<li>{{ t }}</li>{% endfor %}</ul>{% endif %}
+            {%- if p.url %}<span class="win__go">Abrir ↗</span>{% endif %}
+          </div>
+        </div>
+      {%- endcapture -%}
+      {%- if p.url %}
+      <a class="win{% if p.featured %} win--featured{% endif %}" href="{{ p.url }}" target="_blank" rel="noopener noreferrer">{{ inner }}</a>
+      {%- else %}
+      <article class="win{% if p.featured %} win--featured{% endif %}">{{ inner }}</article>
+      {%- endif %}
+      {%- endfor %}
+    </div>
+
+    <div class="tools">
+      <div class="tools__head">
+        <h3 class="label">Herramientas open source</h3>
+        <a class="ulink" href="https://github.com/gohanckz" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
+      {%- for t in cv.tools %}
+      <a href="{{ t.url }}" target="_blank" rel="noopener noreferrer">
+        <span class="tools__n">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+        <span class="tools__name">{{ t.name }}</span>
+        <span class="tools__desc">{{ t.description }}</span>
+        <span class="tools__arr" aria-hidden="true">↗</span>
+      </a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="bugbounty">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-head__idx">[04]</span>
+      <h2>Bug bounty</h2>
+      <span class="sec-head__aside label">Comunidad e investigación</span>
+    </div>
+    <div class="cols cols--3">
+      {%- for r in cv.research %}
+      <div class="research__item">
+        <h3>{% if r.url %}<a href="{{ r.url }}" target="_blank" rel="noopener noreferrer">{{ r.title }} ↗</a>{% else %}{{ r.title }}{% endif %}</h3>
+        <p>{{ r.detail }}</p>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="certificaciones">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-head__idx">[05]</span>
+      <h2>Certificaciones</h2>
+      <span class="sec-head__aside label">{{ cv.certifications.size }} activas</span>
+    </div>
+    <ul class="certs">
+      {%- for c in cv.certifications %}
+      <li><strong>{{ c.short }}</strong><span>{{ c.name }}</span><em>{{ c.issuer }}</em></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="stack">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-head__idx">[06]</span>
+      <h2>Stack</h2>
+      <span class="sec-head__aside label">Herramientas y técnicas</span>
+    </div>
+    <div class="cols">
+      {%- for g in cv.skills %}
+      <div>
+        <h3 class="label">{{ g.group }}</h3>
+        <ul>{% for i in g.items %}<li>{{ i }}</li>{% endfor %}</ul>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+{%- if site.posts.size > 0 %}
+<section class="section" id="writeups">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-head__idx">[07]</span>
+      <h2>Writeups</h2>
+      <a class="ulink sec-head__aside" href="{{ '/blog/' | relative_url }}">Ver los {{ site.posts.size }} ↗</a>
+    </div>
+    <div class="plist">
+      {%- for post in site.posts limit: 4 %}
+      <a class="prow" href="{{ post.url | relative_url }}">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d.%m.%Y' }}</time>
+        <h3>{{ post.title }}</h3>
+        <span class="prow__cat">{{ post.categories | first }}</span>
+        <span class="prow__arr" aria-hidden="true">↗</span>
+      </a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+{%- endif %}
+
+<section class="section" id="contacto">
+  <div class="wrap">
+    <div class="contact__grid">
+      <p class="contact__big">¿Tienes un <b>objetivo</b><br>que necesita ser<br>puesto a prueba?</p>
+      {%- assign mail = b.email | split: '@' %}
+      <a class="btn btn--solid js-mail" href="#contacto" data-u="{{ mail[0] }}" data-d="{{ mail[1] }}" data-cursor="Email">Escríbeme <span class="arr">↗</span></a>
+    </div>
+    <div class="contact__links">
+      <div>
+        <h3 class="label">Especialidad</h3>
+        <p class="muted" style="margin-top:14px;font-size:14.5px;line-height:2">Web y APIs<br>Hacking mobile<br>Red Team<br>Agentes ofensivos con IA</p>
+      </div>
+      <div>
+        <h3 class="label">Perfiles</h3>
+        <div style="margin-top:14px">{% for l in b.links %}<a href="{{ l.url }}" target="_blank" rel="noopener noreferrer">{{ l.name }} ↗</a>{% endfor %}</div>
+      </div>
+      <div>
+        <h3 class="label">Sitio</h3>
+        <div style="margin-top:14px">
+          <a href="{{ '/cv/' | relative_url }}">CV</a>
+          <a href="{{ '/blog/' | relative_url }}">Blog</a>
+          <a href="{{ '/categories/' | relative_url }}">Categorías</a>
+        </div>
+      </div>
+      <div>
+        <h3 class="label">Proyectos</h3>
+        <div style="margin-top:14px">{% for p in cv.projects %}{% if p.url %}<a href="{{ p.url }}" target="_blank" rel="noopener noreferrer">{{ p.name }} ↗</a>{% endif %}{% endfor %}</div>
+      </div>
+    </div>
+  </div>
+</section>

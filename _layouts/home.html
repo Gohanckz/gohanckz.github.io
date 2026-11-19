@@ -1,0 +1,45 @@
+---
+layout: default
+body_class: page-blog
+---
+{%- comment -%} Índice del blog: todos los writeups, con búsqueda y filtro por categoría (assets/js/site.js). {%- endcomment -%}
+{%- assign cats = site.categories | sort -%}
+<div class="wrap">
+  <header class="blog-head">
+    <p class="label" style="margin-bottom:18px">~/blog · <span id="post-count">{{ site.posts.size }}</span> entradas</p>
+    <h1 data-decode>Writeups</h1>
+    <p>Notas de vulnerabilidades, laboratorios y máquinas resueltas: web, APIs, HTB, THM y herramientas.</p>
+  </header>
+
+  <div class="blog-tools">
+    <label class="search" for="post-search">
+      <span aria-hidden="true">&gt;_</span>
+      <input id="post-search" type="search" placeholder="Buscar… (pulsa /)" autocomplete="off" aria-label="Buscar writeups">
+    </label>
+    <div class="filters" role="group" aria-label="Filtrar por categoría">
+      <button type="button" data-cat="all" aria-pressed="true">Todo<sup>{{ site.posts.size }}</sup></button>
+      {%- for c in cats %}
+      <button type="button" data-cat="{{ c[0] | slugify }}" aria-pressed="false">{{ c[0] }}<sup>{{ c[1].size }}</sup></button>
+      {%- endfor %}
+    </div>
+  </div>
+
+  <div class="plist">
+    {%- for post in site.posts %}
+    {%- assign cat = post.categories | first -%}
+    <a class="prow" href="{{ post.url | relative_url }}" data-cat="{{ cat | slugify }}" data-search="{{ post.title | escape }} {{ post.tags | join: ' ' }} {{ post.categories | join: ' ' }}">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d.%m.%Y' }}</time>
+      <h3>{{ post.title }}</h3>
+      <span class="prow__cat">{{ cat }}</span>
+      <span class="prow__arr" aria-hidden="true">↗</span>
+    </a>
+    {%- endfor %}
+  </div>
+  <p class="blog-empty" hidden>// sin resultados. Prueba otra búsqueda.</p>
+
+  <nav class="blog-nav" aria-label="Más índices">
+    <a class="ulink" href="{{ '/categories/' | relative_url }}">Categorías</a>
+    <a class="ulink" href="{{ '/tags/' | relative_url }}">Etiquetas</a>
+    <a class="ulink" href="{{ '/archives/' | relative_url }}">Archivo</a>
+  </nav>
+</div>

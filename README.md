@@ -1,56 +1,47 @@
-# Chirpy Starter
+# gohanckz.github.io
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+Portfolio, CV y blog de writeups de **Iván González (Gohanckz)**: <https://gohanckz.github.io>
 
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
-`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
-from the theme's gem. If you have ever installed this theme gem, you can use the command
-`bundle info --path jekyll-theme-chirpy` to locate these files.
+| Ruta | Qué es | Archivo |
+|------|--------|---------|
+| `/` | Portada del portfolio | `index.html` |
+| `/cv/` | CV web, imprimible a PDF (botón "Descargar PDF") | `cv/index.html` |
+| `/blog/` | Listado de writeups (tema [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy)) | `blog/index.html` |
+| `/posts/...` | Cada writeup | `_posts/*.md` |
 
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
-able to enjoy the out-of-the-box experience when using feature-rich themes.
+## Actualizar el CV
 
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
-Jekyll site. The following is a list of targets:
+Todo el contenido del CV y de la portada sale de **`_data/cv.yml`**. No hace falta tocar HTML:
 
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
+- **Nueva experiencia:** copia un bloque de `experience:` y pégalo arriba (el orden del archivo es el orden en pantalla).
+- **Nueva certificación:** añade una entrada en `certifications:`.
+- **Nuevo proyecto:** añade un bloque en `projects:`; con `featured: true` se destaca.
+- **Cifras de la portada:** `basics.stats`.
+
+Haz commit y push a `main`: GitHub Actions compila y publica el sitio en un par de minutos.
+
+## Nuevo writeup
+
+Crea `_posts/AAAA-MM-DD-titulo.md` con el front matter habitual de Chirpy (`title`, `date`, `categories`, `tags`).
+
+## Probar en local
+
+```bash
+bundle install
+bundle exec jekyll serve --livereload
+# http://localhost:4000
 ```
 
-To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
-latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
+## Estructura del diseño
 
-## Prerequisites
+Todo el sitio (portada, CV y blog) usa un diseño propio; del tema Chirpy solo se aprovechan sus plugins
+(SEO, feed, sitemap, archivos de categorías y etiquetas, redirecciones).
 
-Follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of
-the basic environment. [Git](https://git-scm.com/) also needs to be installed.
+- `_layouts/default.html`: estructura común (navegación, footer, cursor).
+- `_layouts/home.html`, `post.html`, `categories.html`, `category.html`, `tags.html`, `tag.html`, `archives.html`, `page.html`: blog.
+- `assets/css/site.css`: estilos (tokens de color en `:root`, estilos de impresión del CV al final).
+- `assets/js/site.js`: ojo ASCII animado, cursor de selección, texto que se descifra, buscador del blog, índice y botón de copiar en los posts.
 
-## Installation
+## Licencia
 
-Sign in to GitHub and [**use this template**][use-template] to generate a brand new repository and name it
-`USERNAME.github.io`, where `USERNAME` represents your GitHub username.
-
-Then clone it to your local machine and run:
-
-```console
-$ bundle
-```
-
-## Usage
-
-Please see the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy#documentation).
-
-## License
-
-This work is published under [MIT][mit] License.
-
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[use-template]: https://github.com/cotes2020/chirpy-starter/generate
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
+Tema Chirpy bajo licencia [MIT](LICENSE).

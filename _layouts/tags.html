@@ -1,0 +1,16 @@
+---
+layout: default
+body_class: page-blog
+---
+{%- assign tags = site.tags | sort -%}
+<div class="wrap">
+  <header class="blog-head">
+    <p class="label" style="margin-bottom:18px"><a href="{{ '/blog/' | relative_url }}">~/blog</a> / etiquetas</p>
+    <h1 data-decode>Etiquetas</h1>
+  </header>
+  <div class="tag-cloud">
+    {%- for t in tags %}
+    <a href="{{ '/tags/' | relative_url }}{{ t[0] | slugify }}/">#{{ t[0] }}<sup>{{ t[1].size }}</sup></a>
+    {%- endfor %}
+  </div>
+</div>

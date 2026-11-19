@@ -1,0 +1,50 @@
+---
+layout: default
+body_class: page-post
+---
+{%- assign cat = page.categories | first -%}
+{%- assign words = content | strip_html | number_of_words -%}
+{%- assign mins = words | divided_by: 200 | plus: 1 -%}
+<div class="wrap">
+  <header class="post-head">
+    <p class="crumbs"><a href="{{ '/' | relative_url }}">~</a> / <a href="{{ '/blog/' | relative_url }}">blog</a>{% if cat %} / <a href="{{ '/categories/' | relative_url }}{{ cat | slugify }}/">{{ cat | downcase }}</a>{% endif %} / <span>{{ page.slug | default: page.title | slugify }}</span></p>
+    <h1>{{ page.title }}</h1>
+    <div class="post-meta">
+      <span><b>Fecha</b>{{ page.date | date: '%d.%m.%Y' }}</span>
+      {%- if cat %}<span><b>Categoría</b>{{ cat }}</span>{% endif %}
+      <span><b>Lectura</b>~{{ mins }} min</span>
+      {%- if page.last_modified_at and page.last_modified_at != page.date %}<span><b>Editado</b>{{ page.last_modified_at | date: '%d.%m.%Y' }}</span>{% endif %}
+    </div>
+  </header>
+
+  <div class="post-layout">
+    <article class="prose">
+      {{ content }}
+
+      <footer class="post-foot">
+        {%- if page.tags.size > 0 %}
+        <p class="label">Etiquetas</p>
+        <ul class="chips">
+          {%- for t in page.tags %}
+          <li style="padding:0;border:0"><a href="{{ '/tags/' | relative_url }}{{ t | slugify }}/">#{{ t }}</a></li>
+          {%- endfor %}
+        </ul>
+        {%- endif %}
+
+        <nav class="post-pn" aria-label="Más entradas">
+          {%- if page.previous %}
+          <a href="{{ page.previous.url | relative_url }}"><span class="label">← Anterior</span><strong>{{ page.previous.title }}</strong></a>
+          {%- endif %}
+          {%- if page.next %}
+          <a href="{{ page.next.url | relative_url }}"><span class="label">Siguiente →</span><strong>{{ page.next.title }}</strong></a>
+          {%- endif %}
+        </nav>
+      </footer>
+    </article>
+
+    <aside class="toc" aria-label="Índice del artículo">
+      <h2 class="label">Contenido</h2>
+      <nav></nav>
+    </aside>
+  </div>
+</div>

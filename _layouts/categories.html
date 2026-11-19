@@ -1,0 +1,20 @@
+---
+layout: default
+body_class: page-blog
+---
+{%- assign cats = site.categories | sort -%}
+<div class="wrap">
+  <header class="blog-head">
+    <p class="label" style="margin-bottom:18px"><a href="{{ '/blog/' | relative_url }}">~/blog</a> / categorías</p>
+    <h1 data-decode>Categorías</h1>
+  </header>
+  <div class="idx-list" style="margin-bottom:112px">
+    {%- for c in cats %}
+    <a class="idx-row" href="{{ '/categories/' | relative_url }}{{ c[0] | slugify }}/">
+      <h2>{{ c[0] }}</h2>
+      <span>{{ c[1].size }} {% if c[1].size == 1 %}entrada{% else %}entradas{% endif %}</span>
+      <span class="prow__arr" aria-hidden="true">↗</span>
+    </a>
+    {%- endfor %}
+  </div>
+</div>
